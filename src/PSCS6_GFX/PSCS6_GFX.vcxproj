@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and '$(VisualStudioVersion)' == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBCF09E8-7E63-4717-B89E-0762E0A05657}</ProjectGuid>
+    <RootNamespace>PSCS6_GFX</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.8bi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.8bi</TargetExt>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.8bi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.8bi</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Common;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\pica_sp;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\photoshop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ISOLATION_AWARE_ENABLED=1;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Common;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\pica_sp;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\photoshop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ISOLATION_AWARE_ENABLED=1;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\pica_sp;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\photoshop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ISOLATION_AWARE_ENABLED=1;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\pica_sp;D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\photoshop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ISOLATION_AWARE_ENABLED=1;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\DialogUtilities.h" />
+    <ClInclude Include="Common\FileUtilities.h" />
+    <ClInclude Include="Common\PIDefines.h" />
+    <ClInclude Include="Common\PIDLLInstance.h" />
+    <ClInclude Include="Common\PIUI.h" />
+    <ClInclude Include="Common\PIUSuites.h" />
+    <ClInclude Include="Common\PIUtilities.h" />
+    <ClInclude Include="GFX-sym.h" />
+    <ClInclude Include="GFX.h" />
+    <ClInclude Include="GFXLib.h" />
+    <ClInclude Include="GFXTerminology.h" />
+    <ClInclude Include="IOLib.h" />
+    <ClInclude Include="PSBridge.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\DialogUtilitiesWin.cpp" />
+    <ClCompile Include="Common\FileUtilities.cpp" />
+    <ClCompile Include="Common\FileUtilitiesWin.cpp" />
+    <ClCompile Include="Common\PIDLLInstance.cpp" />
+    <ClCompile Include="Common\PIUSuites.cpp" />
+    <ClCompile Include="Common\PIUtilities.cpp" />
+    <ClCompile Include="Common\PIUtilitiesWin.cpp" />
+    <ClCompile Include="Common\PIWinUI.cpp" />
+    <ClCompile Include="GFX.cpp" />
+    <ClCompile Include="GFXLib.cpp" />
+    <ClCompile Include="GFXScripting.cpp" />
+    <ClCompile Include="GFXUI.cpp" />
+    <ClCompile Include="IOLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GFX.r">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I "D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\pica_sp" /I "D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\photoshop"   /I "D:\DEVKIT\PS_CS6 SDK\pluginsdk\photoshopapi\resources"     /I "D:\DEVKIT\PS_CS6 SDK\pluginsdk\samplecode\common\resources"    /I "D:\DEVKIT\PS_CS6 SDK\pluginsdk\samplecode\common\includes" /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
+"D:\DEVKIT\PS_CS6 SDK\pluginsdk\samplecode\resources\cnvtpipl" "$(IntDir)%(Filename).rr" "$(IntDir)\..\..\%(Filename).pipl"
+del "$(IntDir)%(Filename).rr"
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling PiPL resource...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\..\..\%(Filename).pipl;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GFX.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

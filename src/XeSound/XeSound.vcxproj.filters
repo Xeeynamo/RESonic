@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\2612intf.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\common.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\dirent.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\fm.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\mamedef.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\smps.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sn764intf.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sn76489.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sound.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\stdbool.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\stdtype.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\Stream.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\types.h" />
+    <ClInclude Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\vgmwrite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\dirent.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\fm2612.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\loader.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\main.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\smps.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sn764intf.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sn76489.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\sound.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\Stream.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\vgmwrite.c" />
+    <ClCompile Include="C:\Users\Xeeynamo\Desktop\SMPS\srcmine\2612intf.c" />
+  </ItemGroup>
+</Project>

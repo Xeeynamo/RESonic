@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Object">
+    <entry name="Ring disappearing">
+      <description>Animazione eseguita quando i ring sono stati persi dal giocatore e stanno per scomparire.</description>
+    </entry>
+    <entry name="Ring disappear">
+      <description>Animazione eseguita quando il giocatore tocca e quindi prende il ring.</description>
+    </entry>
+  </category>
+</animlist>

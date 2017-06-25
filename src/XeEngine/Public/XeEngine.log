@@ -1,0 +1,80 @@
+﻿Build started 14/09/2016 03:34:09.
+     1>Project "D:\Xeeynamo\Dropbox\Development\XeEngine_\XeEngine\XeEngine.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Public\XeEngine.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Public\XeEngine.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Public\XeEngine.lib" /MACHINE:X86 /SAFESEH Public\ANM.obj
+         Public\0001_Sonic.obj
+         Public\0010_Ring.obj
+         Public\001A_Pathswap.obj
+         Public\BLK.obj
+         Public\ChunkEditor.obj
+         Public\ChunkSelector.obj
+         Public\CLI.obj
+         Public\Console.obj
+         Public\ContextMenu.obj
+         Public\Control.obj
+         Public\CSOTN.obj
+         Public\DebugConsole.obj
+         Public\DTL.obj
+         Public\Editor.obj
+         Public\Editor_Object.obj
+         Public\Editor_Block.obj
+         Public\Editor_HBX.obj
+         Public\Editor_LUT.obj
+         Public\Editor_Map.obj
+         Public\Editor_Preview.obj
+         Public\Game.obj
+         Public\Game_Level.obj
+         Public\Game_LevelSelect.obj
+         Public\Game_tests.obj
+         Public\GFX.obj
+         Public\HBX.obj
+         Public\LUT.obj
+         Public\MainEditor.obj
+         Public\MAP.obj
+         Public\LevelMap.obj
+         Public\MapEditor.obj
+         Public\ObjectList.obj
+         Public\OBP.obj
+         Public\OGL.obj
+         Public\PaletteEditor.obj
+         Public\PaletteSelector.obj
+         Public\Preview.obj
+         Public\Slidebar.obj
+         Public\Sonic.obj
+         Public\SonicDec.obj
+         Public\Sonic1.obj
+         Public\Sonic1LVL.obj
+         Public\Sonic2.obj
+         Public\TextureEditor.obj
+         Public\TGA.obj
+         Public\TileSelector.obj
+         Public\XeAnimation.obj
+         Public\XeColor.obj
+         Public\XeEffect.obj
+         Public\XeImage.obj
+         Public\XeLevel.obj
+         Public\XeLevelIO.obj
+         Public\XeLevelObject.obj
+         Public\XeMath.obj
+         Public\XeMemory.obj
+         Public\XeObject.obj
+         Public\XeObjectAnimation.obj
+         Public\XeObjectDebug.obj
+         Public\XeScene.obj
+         Public\WinMain.obj
+         Public\WndProc.obj
+         Public\XeEntity.obj
+         Public\XeFile.obj
+         Public\XeFont.obj
+         Public\XeShape.obj
+         Public\XeString.obj
+         Public\XeSystem.obj
+         Public\XeTexture.obj
+         Generating code
+         Finished generating code
+         XeEngine.vcxproj -> D:\Xeeynamo\Dropbox\Development\XeEngine_\Public\XeEngine.exe
+     1>Done Building Project "D:\Xeeynamo\Dropbox\Development\XeEngine_\XeEngine\XeEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.21

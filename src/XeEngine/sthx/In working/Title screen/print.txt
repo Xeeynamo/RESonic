@@ -1,0 +1,5 @@
+Draw(TitleScreen, (ScreenWidth - this.Width) / 2, (ScreenHeight - this.Height) / 2);
+Draw(TitleSonic, (ScreenWidth - this.Width) / 2, (ScreenHeight - this.Height) / 2);
+
+116, 200, 28, 104
+84, 76

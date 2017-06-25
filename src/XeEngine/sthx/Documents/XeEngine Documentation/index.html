@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XeEngine documentation - Index</title>
+<style type="text/css">
+.FunctionDeclaration {
+	font-weight: bold;
+	color: #033;
+}
+.ParameterDescription {
+	font-style: italic;
+	color: #039;
+}
+.EnumerationDescription {
+	font-style: italic;
+	color: #630;
+}
+.VariableType {
+	font-style: italic;
+	color: #09C;
+}
+.ConstantType {
+	font-style: italic;
+	color: #906;
+}
+</style>
+</head>
+
+<body>
+<p><strong><center>Documentazione ufficiale di XeEngine</center></strong></p>
+<p><strong>Sommario</strong></p>
+<ul>
+  <li><a href="#introduzione">Introduzione</a></li>
+  <li><a href="#prerequisiti">Prerequisiti</a></li>
+  <li><a href="#sdk">XeSDK</a>  </li>
+  <ul>
+    <li><a href="#sdk_strati">Gli strati di XeEngine</a></li>
+    <li>Creazione del progetto</li>
+    <li>Esempi</li>
+  </ul>
+  <li>L'Editor
+    <ul>
+      <li><a href="#xeeditor">Lo XeEditor</a></li>
+    </ul>
+  </li>
+  <li><a href="#filetypes">Tipi di file</a></li>
+  <li>Le texture</li>
+  <li><a href="#physicandcollision">Fisica e collisioni</a></li>
+  <li>Gli oggetti</li>
+  <li><a href="#terminologie">Terminologie</a></li>
+  <li><a href="#crediti">Crediti</a></li>
+</ul>
+<hr />
+<p id="introduzione"><strong>Introduzione</strong></p>
+<p>XeEngine è un framework, formato da una serie di librerie che aiutano lo sviluppo di giochi o software principalmente 2D. Il framework è pensato per essere multipiattaforma ed ha un certo livello di astrazione, infatti verranno offerte varie funzioni che comunicheranno con il sistema operativo su una determinata macchina senza conoscere questi ultimi. Il framework offre un sistema a livelli, che aiuta lo sviluppo in base a ciò che lo sviluppatore cerca (vedere <a href="#strati">Gli strati di XeEngine</a>). E' possibile comunicare con lo XeSDK per sviluppare direttamente con il codice nativo, con XeScript per generare del bytecode compatibile con ogni macchina senza necessariamente ricompilare il codice per ognuna, XeWidget che consente di creare applicazioni basati su bottoni e caselle, ed infine XeEditor, l'editor integrato che può aiutare allo sviluppo di giochi. Tutto questo insieme forma XeEngine.<br />
+  NOTA: XeEngine è un prodotto ancora in fase di sviluppo, perciò la documentazione potrebbe non essere aggiornata instantaneamente in base alle ultime aggiunte nell'eseguibile o viceversa.</p>
+<p><strong id="prerequisiti">Prerequisiti</strong></p>
+<p>I requisiti minimi sono 64MB di memoria RAM, un processore da almeno 0.5 GHz ed una scheda video da 32MB che supporta OpenGL 1.1 e / o DirectX 9.0a.<br />
+  I requisiti ottimali invece, sono 128MB di memoria RAM, un processore da 1 GHz ed una scheda video da 128MB che supporta OpenGL 2.1 e / o DirectX 9.0c assieme a Pixel Shader 2.0.<br />
+  Soddisfando i requisiti ottimali, si ha una gestione nativa delle palette, incrementando enormemente le performance. Nel caso dei requisiti minimi il sistema di palette viene emulato, ma questa tecnica non garantisce performance soddisfacenti.<br />
+Come sistema operativi e macchine, la build corrente è stata provata solo su una macchina avente Microsoft(r) Windows 7, ma è garantita la compatibilità anche da Windows XP in poi. Sono in programma delle cross-builds per sistemi Unix, Android, Windows Phone 8, Windows RT e Raspberry Pi. Non ci sono piani per i sistemi Mac OS X e iOS. </p>
+<hr />
+<h1 id="sdk">XeSDK</h1>
+<p>XeSDK è un Software Development Kit sviluppato in C++11. Per includerlo nel </p>
+<p><strong id="sdk_strati">Gli strati di XeEngine</strong></p>
+<p>L'engine è formato a strati, chiamati livelli, dove ogni strato contiene un set di istruzioni:</p>
+<ol>
+  <li><a href="#level1">Gestione delle chiamate di sistema, video, audio ed input</a></li>
+  <li><a href="#level2">Gestione delle sprite, XeFS e caricamento delle textures</a></li>
+  <li><a href="#level3">Gestione dei livelli, entità ed animazioni</a></li>
+</ol>
+<br/>
+<p id="level1"><strong id="level1">Livello 1</strong><br />
+  Il livello 1 è il livello base che consente di astrarre il sistema operativo e la macchina su cui XeEngine si appoggia. Questi insiemi di moduli dovrebbero bastare per lo sviluppatore, evitando ogni comunicazione diretta con il sistema. Questo permette di poter ricompilare lo stesso codice per più macchine, senza modificare una riga di codice.
+</p>
+<ul>
+  <li><a href="#xebase">XeBase</a></li>
+  <li><a href="#sytem">System</a></li>
+  <li><a href="#math">Math</a></li>
+  <li><a href="#list">List</a></li>
+  <li><a href="#geometry">Geometry</a></li>
+  <li><a href="#video">Video</a></li>
+  <li><a href="#input">Input</a></li>
+  <li><a href="#audio">Audio</a></li>
+  <li><a href="#window">Window</a></li>
+</ul>
+<p></p>
+<p id="xeeditor_texture2"><strong id="xebase">XeBase</strong></p>
+<p>Definisce una serie di tipi e costanti che semplificano lo sviluppo.</p>
+<p>Tipi:<br />
+  <span class="VariableType">sbyte</span>: tipo con segno ad 8 bit<br />
+  <span class="VariableType">s8</span>: tipo con segno ad 8 bit<br />
+  <span class="VariableType">byte</span>: tipo senza segno ad 8 bit<br />
+  <span class="VariableType">u8</span>: tipo senza segno ad 8 bit<br />
+  <span class="VariableType">sshort</span>: tipo con segno a 16 bit<br />
+  <span class="VariableType">s16</span>: tipo con segno a 16 bit<br />
+  <span class="VariableType">ushort</span>: tipo senza segno a 16 bit<br />
+  <span class="VariableType">u16</span>: tipo senza segno a 16 bit<br />
+  <span class="VariableType">sint</span>: tipo con segno a 32 bit<br />
+  <span class="VariableType">s32</span>: tipo con segno a 32 bit<br />
+  <span class="VariableType">uint</span>: tipo senza segno a 32 bit<br />
+  <span class="VariableType">u32</span>: tipo senza segno a 32 bit <br />
+  <span class="VariableType" id="xebase_memoryhandle">MemoryHandle</span>: puntatore generico ad un indirizzo di memoria; alias di void*<br />
+  <span class="VariableType" id="xebase_filehandle">FileHandle</span>: puntatore generico ad un file; alias di void*<br />
+  <span class="VariableType">Hash</span>: 
+tipo di grandezza machine-dependent, usato per generici hash<br />
+<span class="VariableType">UID</span>: tipo di grandezza machine-dependent, usato per generici ID<br />
+<span class="VariableType">Color32</span>: tipo usato per i colori a 32 bit; alias di unsigned int<br />
+<span class="VariableType">Color</span>: alias di Color32</p>
+<p>Costanti:<br />
+  <span class="ConstantType">nullptr</span>: puntatore generico nullo<br />
+  <span class="ConstantType">SAFE_DELETE(p)</span>: richiama delete se il puntatore non è nullo<br />
+  <span class="ConstantType">SAFE_ADELETE(p)</span>: richiama delete[] se il puntatore non è nullo<br />
+  <span class="ConstantType">HIPART(n)</span>: 
+  prende i 16 bit alti di una variabile n a 32 bit<br />
+  <span class="ConstantType">LOPART(n)</span>: 
+  prende i 16 bit bassi di una variabile n a 32 bit<br />
+  <span class="ConstantType">EXPORT</span>: esporta una funzione o una classe in un modulo<br />
+</p>
+<p id="xeeditor_texture3"><strong id="system">System</strong></p>
+<p>Gestisce tutte le chiamate di sistema. E' un modulo importante che serve per separare il sistema operativo della macchina con il software.</p>
+<p>Enumerazioni:</p>
+<ul>
+  <li><span class="FunctionDeclaration">FileSeekMode</span>:<br />
+    <span class="EnumerationDescription">FILESEEK_SET</span>: si sposta in un file specificando una posizione assoluta (quindi a partire dalla posizione 0 del file)<br />
+    <span class="EnumerationDescription">FILESEEK_CUR</span>: si sposta in un file specificando una posizione relativa (quindi a partire dalla posizione corrente del file)<br />
+  <span class="EnumerationDescription">FILESEEK_END</span>: si sposta in un file specificando una posizione assoluta partendo dalla fine del file</li>
+  <li><span class="FunctionDeclaration" id="system_language">Language</span>:<br />
+    <span class="EnumerationDescription">LANGUAGE_ENGLISH</span><br />
+    <span class="EnumerationDescription">LANGUAGE_ITALIAN</span><br />
+    <span class="EnumerationDescription">LANGUAGE_FRENCH</span><br />
+    <span class="EnumerationDescription">LANGUAGE_GERMAN</span><br />
+    <span class="EnumerationDescription">LANGUAGE_SPANISH</span><br />
+  <span class="EnumerationDescription">LANGUAGE_JAPANESE</span></li>
+  <li><span class="FunctionDeclaration" id="system_messageboxtype">MessageBoxType</span>:<br />
+    <span class="EnumerationDescription">MessageBoxType_Error</span>: lancia una finestra come messaggio di errore<br />
+    <span class="EnumerationDescription">MessageBoxType_Warning</span>: lancia una finestra come messaggio di avviso<br />
+  <span class="EnumerationDescription">MessageBoxType_Info</span>: lancia una finestra come messaggio di informazione</li>
+</ul>
+<p>Funzioni:</p>
+<ul>
+  <li><span class="FunctionDeclaration">void MemoryCopy(MemoryHandle dst, MemoryHandle src, u32 size)</span><br />
+    Copia un insieme di byte da 
+    una porzione di memoria ad un'altra.<br />
+    <span class="ParameterDescription">MemoryHandle dst [in]</span>: destinazione dei dati<br />
+    <span class="ParameterDescription">MemoryHandle src [in]</span>: sorgente dei dati<br />
+  <span class="ParameterDescription">u32 size [in]</span>: quantitativo in byte di dati da copiare</li>
+  <li><span class="FunctionDeclaration">void MemoryFill(MemoryHandle dst, u32 size, u8 value = 0)</span><br />
+    Riempe una porzione di memoria con un determinato dato.<br />
+    <span class="ParameterDescription">MemoryHandle dst [in]</span>: destinazione dei dati<br />
+    <span class="ParameterDescription">u32 size [in]</span>: quantitativo in byte di dati da scrivere<br />
+  <span class="ParameterDescription">u8 value [in]</span>: valore in byte da scrivere per tutta la memoria</li>
+  <li><span class="FunctionDeclaration">s32 MemoryCompare(MemoryHandle mem1, MemoryHandle mem2, u32 size)</span><br />
+    Compara due zone di memoria
+    <br />
+    <span class="ParameterDescription">MemoryHandle mem1 [in]</span>: prima zona di memoria<br />
+    <span class="ParameterDescription">MemoryHandle mem2 [in]</span>: seconda zona di memoria<br />
+    <span class="ParameterDescription">u32 size [in]</span>: numero di byte da confrontare<br />
+  <span class="ParameterDescription">s32 [return]</span>: ritorna 0 se mem1 e mem2 sono uguali, &gt; 0 se l'ultimo byte di mem1 confrontato è maggiore dell'ultimo byte di mem2 confrontato, &lt; 0 se viceversa.</li>
+  <li><span class="FunctionDeclaration">u32 StringLength(const char* str)</span><br />
+    Ottiene la lunghezza di una stringa
+    <br />
+    <span class="ParameterDescription">const char* str [in]</span>, stringa di ingresso da cui verrà calcolata la lunghezza<br />
+  <span class="ParameterDescription">u32 [return]</span>: ritorna il numero di caratteri presenti dall'inizio della stringa sino al carattere di fine stringa '\0' escluso</li>
+  <li><span class="FunctionDeclaration"><a href="#system_language">Language</a> GetLanguage()</span><br />
+    Ottiene la lingua correntemente impostata. Se la lingua ritornata non è riconosciuta dall'engine, viene ritornato
+  <span class="EnumerationDescription">LANGUAGE_ENGLISH</span></li>
+  <li><span class="FunctionDeclaration">void Delay(u32 millisecond)</span><br />
+  Blocca il thread dell'applicazione per il numero specificato di millisecondi</li>
+  <li> <span class="FunctionDeclaration">u32 GetTimer()</span><br />
+  Ottiene il timer di sistema corrente</li>
+  <li><span class="FunctionDeclaration">void ShowMessageBox(<a href="system_messageboxtype">MessageBoxType</a> type, const char* message)</span><br />
+    Visualizza una finestra con un messaggio.<br />
+    <span class="ParameterDescription">MessageBoxType type</span>: tipo della finestra<br />
+  <span class="ParameterDescription">const char* message</span>: stringa che contiene il messaggio da visualizzare</li>
+  <li><span class="FunctionDeclaration">bool MemoryAlloc(<a href="#xebase_memoryhandle">MemoryHandle</a>&amp; mem, u32 size)</span><br />
+    Alloca dinamicamente una porzione di memoria nella RAM di sistema<br />
+  <span class="ParameterDescription">MemoryHandle&amp; mem [out</span>]: Contiene il puntatore alla memoria che verrà allocata<br />
+  <span class="ParameterDescription">u32 size</span>: numero di byte da allocare<br />
+  <span class="ParameterDescription">bool [return]</span>: ritorna true se la memoria è stata allocata con successo, viceversa ritorna false. Nel caso ritorna false, mem viene impostato a nullptr.</li>
+  <li><span class="FunctionDeclaration">bool MemoryAllocZero(<a href="#xebase_memoryhandle">MemoryHandle</a>&amp; mem, u32 size)</span><br />
+    Alloca dinamicamente una porzione di memoria nella RAM di sistema ed imposta il suo contenuto a 0<br />
+  <span class="ParameterDescription">MemoryHandle&amp; mem [out</span>]: Contiene il puntatore alla memoria che verrà allocata<br />
+  <span class="ParameterDescription">u32 size</span>: numero di byte da allocare<br />
+  <span class="ParameterDescription">bool [return]</span>: ritorna true se la memoria è stata allocata con successo, viceversa ritorna false. Nel caso ritorna false, mem viene impostato a nullptr.</li>
+  <li><span class="FunctionDeclaration">bool MemoryResize(<a href="#xebase_memoryhandle">MemoryHandle</a>&amp; mem, u32 size)</span><br />
+    Ridimensiona una zona di memoria precedentemente allocata dinamicamente. Se la zona di memoria specificata è nulla, allora viene allocata normalmente. Nel caso di un ridimensionamento positivo, il nuovo spazio di memoria non sarà inizializzato, in caso di ridimensionamento negativo, i dati precedenti verranno persi.<br />
+  <span class="ParameterDescription">MemoryHandle&amp; mem [in, out</span>]: Contiene il puntatore alla memoria già precedentemente allocata<br />
+  <span class="ParameterDescription">u32 size</span>: numero di byte da allocare<br />
+  <span class="ParameterDescription">bool [return]</span>: ritorna true se la memoria è stata riallocata con successo, viceversa ritorna false.</li>
+  <li><span class="FunctionDeclaration">bool MemoryFree(<a href="#xebase_memoryhandle">MemoryHandle</a>&amp; mem)</span><br />
+    Libera la porzione di memoria di sistema specificata. Ogni dato contenuto in esso sarà perso.<br />
+  <span class="ParameterDescription">MemoryHandle&amp; mem [in, out</span>]: Contiene il puntatore alla memoria precedentemente allocata. Dopo questa chiamata, mem sarà impostato a nullptr.</li>
+  <li>FileHandle FileOpen(const char* filename, bool readonly = true);</li>
+  <li>FileHandle FileAppend(const char* filename);</li>
+  <li>FileHandle FileCreate(const char* filename);</li>
+  <li>void FileClose(FileHandle&amp;);</li>
+  <li>bool FileRead(FileHandle, void*, u32);</li>
+  <li>bool FileWrite(FileHandle, void*, u32);</li>
+  <li>bool FileSeek(FileHandle, int position, FileSeekMode);</li>
+  <li>int FilePosition(FileHandle);</li>
+  <li>int FileLength(FileHandle);</li>
+  <li>int FileLength(const char* filename);</li>
+  <li>bool FileExist(const char* filename);<br />
+    <br />
+  </li>
+</ul>
+<p id="xeeditor_texture4"><strong id="math">Math</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture5"><strong id="list">List</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture6"><strong id="geometry">Geometry</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture7"><strong id="video">Video</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture8"><strong id="input">Input</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture9"><strong id="audio">Audio</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture10"><strong id="audio2">Window</strong></p>
+<p>Gestisce la finestra dove il gioco verrà visualizzato. Nel caso di sistemi operativi su personal computers, questo genererà una finestra vera e propria, in smartphone e tablet questa sarà semplicemente la gestione di tutto quel rettangolo che conterrà l'applicazione.</p>
+<p>&nbsp;</p>
+<p>Livello 2</p>
+<p>&nbsp;</p>
+<p><strong id="level3">Livello 3</strong></p>
+<p>Il livello 3 contiene tutto il materiale utile ad una creazione guidata di un gioco con delle meccaniche già prestabilite.</p>
+<ul>
+  <li><a href="#game">Game</a></li>
+  <li><a href="#entity">Entity</a></li>
+  <li><a href="#level">Level</a></li>
+</ul>
+<p id="game"><strong>Game</strong></p>
+<p>TODO</p>
+<p id="entity"><strong>Entity</strong></p>
+<p>TODO</p>
+<p><strong id="level">Level</strong></p>
+<p>Si occupa di gestire l'intero motore di gioco secondo dei precisi prerequisiti: il gioco deve lavorare graficamente sulle due dimensioni, il gioco deve essere basato in tile, ogni tile e sprite deve essere nel formato 4bpp oppure 8bpp (per sfruttare le funzionalità delle palette), ogni mappa non deve superare la grandezza 32767x32767 pixel. Non importa il genere di gioco se è un platform a scorrimento, un rpg ad occhio d'aquila (WARNING si chiamano così no? XD), od uno shoot' em up, ognuna di queste tipologie e più, potrà essere adattata a Level.<br />
+  XeEngine offre la possibilità di gestire in maniera quasi automatica i percorsi dei vari file di una serie di giochi, questo però rispettando un preciso layout.<br />
+  Esempio:<br />
+MMX1\STAGE\HIGHWAY\ACT1.MAP<br />
+MMX1\STAGE\HIGHWAY\TILE0.GFX<br />
+MMX1\SPRITE\VILE\VILE.GFX<br />
+MMX1\SPRITE\VILE\VILE.LUT <br />
+  SONIC1\STAGE\SBZ\ACT1.MAP<br />
+  SONIC1\STAGE\SBZ\ACT2.MAP <br />
+  SONIC1\STAGE\SBZ\ACT3.MAP <br />
+  SONIC1\STAGE\SBZ\TILE0.GFX <br />
+SONIC1\STAGE\SBZ\TILE1.GFX </p>
+<p>La prima parte del percorso è la categoria. Questo permette, al livello logico, di separare uno o più giochi o sezioni di gioco. La seconda parte è composta da una serie di cartelle e file con nomi predefiniti. La terza parte invece prende il percorso dalla lista del tipo di file che si vuole caricare: lista degli stages se si vuole caricare uno stage, lista delle entità se si vuole cariare una sprite con le sue animazioni ed attributi, e così via. Verranno messe a disposizione delle funzioni e / o dei file per gestire in maniera automatica questa gestione dei percorsi.</p>
+<p>&nbsp;</p>
+<hr />
+<p id="xeeditor"><strong>XeEditor</strong></p>
+<p>Lo XeEditor è un editor integrato nel gioco, disponibile solo nella modalità Developer dell'eseguibile XeEngine. Durante l'esecuzione del gioco, in qualsiasi momento è possibile accedere alla parte dedicata ai Developers premendo uno dei tasti da 1 a 9 sulla tastiera:</p>
+<ol>
+  <li>NOT IMPLEMENTED YET</li>
+  <li>NOT IMPLEMENTED YET</li>
+  <li><a href="#xeeditor_map">Il Map editor</a></li>
+  <li><a href="#xeeditor_object">L'Object editor</a></li>
+  <li><a href="#xeeditor_palette">Il Palette editor</a></li>
+  <li><a href="#xeeditor_texture">Il Texture editor</a></li>
+  <li><a href="#xeeditor_chunk">Il Chunk editor</a></li>
+  <li><a href="#xeeditor_hitbox">L'Hitbox editor</a></li>
+  <li>NOT IMPLEMENTED YET</li>
+  <li><a href="#xeeditor_game">La modalità Game</a></li>
+  <li>Informazioni varie</li>
+</ol>
+<p id="xeeditor_map"><strong id="xeengine_map">Il Map editor</strong></p>
+<p>Il Map editor, abilitabile col tasto '3', consente di modificare il layout dei layers di una singola mappa.</p>
+<p><a href="mapeditor.png"><img src="mapeditor.png" width="614" height="389" alt="" /></a></p>
+<p>Come sfondo verrà visualizzato parte del livello, a destra vi è localizzata una barra laterale trasparente dove è possibile selezionare uno dei chunk da applicare al livello, infine sopra il puntatore del mouse c'è il blocco che si sta per applicare nel livello. Mentre il cursore è sul livello, con il pulsante sinistro del mouse il Chunk correntemente selezionato verrà applicato nella posizione dove il Chunk di anteprima è posta, con il pulsante destro del mouse o con lo spostamento tramite schermo touchscreen sarà possibile spostare il livello e con il pulsante medio del mouse sarà possibile prendere il Chunk del livello dove vi è posto il puntatore del mouse. Il click destro del mouse è associato al pulsante della tastiera CTRL+'G' (get chunk). E' possibile anche annullare l'operazione di riposizionamento dei chunk premendo la classica combinazione di tasti CTRL+Z oppure è possibile disattivare le funzionalità dell'editor e della barra laterale con CTRL+E. E' possibile scorrere il livello con i pulsanti direzionali della tastiera o del Joypad. Con i pulsanti +/- oppure L1/R1 è possibile selezionare il layer precedente/successivo contenuto nella mappa.<br />
+  Quando il puntatore del mouse è posizionato sulla lista dei Chunk, quest'ultima diventerà opaca finché il puntatore del mouse vi sarà sopra. Qui sarà possibile selezionare uno dei Chunk per poi inserirli nel livello. Con i tasti direzionali della tastiera o del Joypad, è possibile scorrere tra i Chunk, con PGUP/L1oppure con PGDOWN/R1 è possibile scorrere pagina per pagina la lista dei Chunk,  con HOME/L2 sarà possibile tornare al primo Chunk della lista mentre con END/R2 si tornerà al Chunk selezionato. Negli hardware dotati di schermo touchscreen è possibile scorrere la lista con lo scrolling del dito.<br />
+  Le informazioni sullo schermo rappresentano il nome del file dove vi è contenuta la mappa correntemente visualizzata, la posizione e lo spazio occupato nella mappa totale (utile per giochi come Metroid e Castlevania), il layer correntemente selezionato, la grandezza in Chunk del layer corrente (è possibile ricavare la dimensione in pixel del livello moltiplicando quei valori per 128), la velocità di scrolling del layer, priorità del layer, posizione corrente della mappa sull'editor, il Chunk correntemente selezionato e quello dove vi è sopra il cursore del mouse.
+</p>
+<p id="xeeditor_object"><strong>L'Object editor</strong></p>
+<p>blabla</p>
+<p id="xeeditor_palette"><strong>Il Palette editor</strong></p>
+<p>blabla</p>
+<p id="xeeditor_texture"><strong>Il Texture editor</strong></p>
+<p>blabla</p>
+<p id="xeeditor_chunk"><strong>Il Chunk editor</strong></p>
+<p>Il Map editor, abilitabile col tasto '7', consente di modificare i Chunks.</p>
+<p><a href="e_chunk.png"><img src="e_chunk.png" width="612" height="360" /></a></p>
+<p>In alto a sinistra si troverà il file assocato al gruppo di Chunk visualizzabili in questa modalità. L'operazione di salvataggio agirà su quel file. Sotto il nome del file viene descritto il Chunk correntemente selezionato. Il Chunk selezionato è riportato subito sotto mentre i Chunk selezionabili sono riportati nella lista a destra.</p>
+<p><a href="e_chunk_01.png"><img src="e_chunk_01.png" width="600" height="240" /></a></p>
+<p>E' possibile scorrere la lista con i pulsanti Su, Giu, PageUP, PageDown, Home ed End (quest'ultimo porta al Chunk correntemente selezionato). Un menu contestuale è disponibile per operazioni come Copy, Paste e Delete. Combinazioni di tasti come CTRL+C, CTRL+V e DELETE sono concesse. E' anche possibile scorrere la lista con la rotella centrale del mouse.</p>
+<p><a href="e_chunk_02.png"><img src="e_chunk_02.png" width="130" height="130" /></a></p>
+<p>E' possibile anche effettuare una selezione multipla tenendo premuto il tasto di selezione del mouse. Da qui si possono effettuare operazioni come Cut, Copy, Paste e Delete, con le rispettive combinazioni CTRL+X, CTRL+C, CTRL+V e DELETE. Queste operazioni sono disponibili anche dal menu contestuale, che però permette di agire singolarmente su un solo tile. E' possibile annullare le operazioni di modifica sino a 64 volte con la combinazione CTRL+Z. Durante la selezione, il primo tile selezionato sarà quello modificabile sotto il Chunk correntemente selezionato.</p>
+<p><a href="e_chunk_03.png"><img src="e_chunk_03.png" width="100" height="110" /></a></p>
+<p>Operazioni come flipping e mirroring sono supportate sui singoli tile grazie alle apposite checkbox</p>
+<p><a href="e_chunk_04.png"><img src="e_chunk_04.png" width="218" height="146" /></a></p>
+<p>Il Depth level è molto utile nel caso si vuole specificare se un determinato tile è presente avanti o dietro il livello delle entità. Questo si può applicare in ogni layer di una singola mappa.</p>
+<p id="xeeditor_hitbox"><strong>L'Hitbox editor</strong></p>
+<p>blabla</p>
+<p id="xeeditor_game"><strong>La modalità game</strong></p>
+<p>blabla</p>
+<hr />
+<p id="filetypes"><strong>Tipi di file</strong></p>
+<p>blabla</p>
+<hr />
+<p id="physicandcollision"><strong>Fisica e collisioni</strong></p>
+<p>Variabili da impostare per ogni oggetto:</p>
+<ul>
+  <li><strong>acceleration</strong>, velocità di accelerazione di un oggetto.</li>
+  <li><strong>deceleration</strong>, velocità di frenata.</li>
+  <li><strong>friction</strong>, forza di decelerazione dell'oggetto quando esso è sul terreno.</li>
+  <li><strong>minspeed</strong>, velocità minima dell'oggetto. abs(inertia) non può essere minore di esso.</li>
+  <li><strong>maxspeed</strong>, velocità massima dell'oggetto. abs(inertia) non può essere maggiore di esso.</li>
+  <li><strong>gravity</strong>, forza di gravità che trascina l'oggetto verso il basso. Teoricamente il valore di gravità è unica e l'oggetto cade in base al suo peso, ma per semplicità di progettazione si è deciso di adottare solo questa variabile.</li>
+  <li><strong>maxgravity</strong>, velocità gravitazionale massima.</li>
+  <li><strong>jump</strong>, forza del salto.</li>
+  <li><strong>jumpmin</strong>, numero di pixel minimi per il salto.</li>
+  <li><strong>airaccmin</strong>, WTF</li>
+  <li><strong>brake</strong>, se abs(inertia) &gt;= brake, allora fa vedere l'animazione della frenata.</li>
+  <li><strong>ducking</strong>, se abs(inertia) &lt; ducking, allora l'oggetto può eseguire le funzioni LookDown e LookUp.</li>
+</ul>
+<p>Variabili di uso interno dell'Engine</p>
+<ul>
+  <li><strong>inertia</strong>, velocità dell'oggetto. Questa è la variabile che è influenzata da acceleration, deceleration, friction e simili.</li>
+  <li><strong>speedx</strong>, velocità X dell'oggetto, dipende da inertia ed angle.</li>
+  <li><strong>speedy</strong>, velocità Y dell'oggetto, dipende da inertia ed angle.</li>
+  <li><strong>angle</strong>, angolo di rotazione dell'oggetto. Utile per trasformare inertia in speedx e speedy o per descrivere come l'oggetto si deve comportare con le Field collision.</li>
+</ul>
+<hr />
+<p id="terminologie"><strong>Terminologie</strong></p>
+<ul>
+  <li id="telecamera"><strong>Camera</strong>, è quell'area di visualizzazione del livello che solitamente segue un  oggetto. I suoi parametri sono le coordinate X, Y e Z.</li>
+  <li><strong>BPP</strong> (Bit Per Pixel), quanto un singolo pixel di un'immagine prende di spazio espresso in bit.</li>
+  <li id="tile"><strong>Tile</strong>, una singola immagine quadratica grande 16x16 o comunque multipla di 16.</li>
+  <li id="palette"><strong>Palette</strong>, una riga di colori a cui un Tile di 4bpp o 8bpp fa riferimento. Una palette contiene 256 colori.</li>
+  <li id="clut"><strong>CLUT</strong> (Color Look-Up Table), o anche tabella di colori, è una raccolta di palette.</li>
+  <li><strong>CLUT 3D</strong>, tabella tridimensionale di colori dove la dimensione X è il colore al quale un singolo pixel fa riferimento, la dimensione Y è la palette correntemente selezionata e la dimensione Z è la CLUT correntemente selezionata</li>
+  <li id="tilesheet"><strong>Tilesheet</strong>, raccolta di Tile posizionata in una texture a tre dimensioni. Una tilesheet può avere una dimensione espressa in Tile di 16x16 ed una profondità da 1 ad un massimo di 256</li>
+  <li id="chunk"><strong>Chunk</strong>, un blocco quadratico di dimensione 8x8 tile (o comunque un multiplo di 2). Ogni Tile contenuto in un Chunk ne descrive a quale Palette fare riferimento, la posizione nella texture ed altre proprietà quali la profondità, Flip e Mirror.</li>
+  <li id="scene"><strong>Scene</strong>, è un blocco di dimensione quadratica 4x4 Chunk.</li>
+  <li id="flip"><strong>Flip</strong>, una tecnica di visualizzazione che consente di ruotare orizzontalmente o verticalmente di 180° una immagine. Soliamente vengono usati i termini <strong>FlipX</strong> (o <strong>Mirror</strong>) o <strong>FlipY</strong> per rappresentare il tipo di rotazione.</li>
+  <li><strong>Hitbox</strong>, è quell'area che genera un evento di collisione se condivide almeno uno stesso pixel nell'area di gioco</li>
+  <li id="fieldcollision"><strong>Field collision</strong>, è una Hitbox che avviene tra un oggetto ed il terreno. L'oggetto non potrà mai passare attraverso questo tipo di Hitbox. Ogni Field collision ha il proprio flag di evento ed una propria angolazione verticale ed orizzontale con una precisione di 1,411</li>
+  <li id="objectcollision"><strong>Entity collision</strong>, è il tipo di collisione che avviene tra due entità, generando un evento.</li>
+  <li><strong>Layer</strong>, un foglio virtuale bidimensionale con una sua dimensione espressa in Scene che raccoglie un insieme di Chunk. Questo stato mette a disposizione un intero livello o sfondo.</li>
+  <li>Layout, descrive il modo con cui i Chunk sono collocati in un Layer.</li>
+  <li><strong>Layout loop</strong>, è una tecnica che permette di ripetere il livello dall'inizio una volta arrivato agli estremi di un lato del Layout (vedere Labyrinth Zone di Sonic 1 e Sky Sanctuary di Sonic &amp; Knuckles). Genericamente è usato per i Layer di background.</li>
+  <li><strong>Layer boundary</strong>, bordo virtuale di un Layer. La telecamera può agire solo all'interno del Layer boundary ed ogni entità (tranne eccezioni se specificato) viene distrutta se fuori.</li>
+  <li><strong>Room</strong>, una raccolta di fogli virtuali dove ne sistema la loro priorità. Una Room ha una propria posizione e dimensione espressa in Scene.</li>
+  <li><strong>Map</strong>, la mappa di un livello. Ogni mappa ha una propria posizione espressa in Scene che la colloca in un punto specifico del World (vedi giochi come Metroid o Castlevania). Ogni Map contiene un insieme di Room.</li>
+  <li><strong>World</strong>, chiamata anche World Map, è l'intero mondo di gioco. Contiene un insieme di Map.</li>
+  <li><strong>Layer deformation</strong>, chiamato anche Parallax, è una tecnica che permette di deformare in linee orizzontali un Layer. Ogni linea orizzontale è spostata con una certa velocità in base alla posizione della Camera o in base ad una propria velocità fissa. E' frequentemente utilizzato nei giochi di Sonic the Hedgehog nei background o sott'acqua per il foreground.</li>
+  <li><strong>Collision index</strong>, è quella tabella che descrive quale Hitbox di tipo Field collision è associata ad un singolo Tile.</li>
+  <li><strong>Path</strong>, è un percorso che descrive quale dei due Collision index un tile deve utilizzare. Utile per esempio per i loop in Sonic o per i tubi in Chemical Plant di Sonic 2.</li>
+  <li><strong>Zone</strong>, chiamato anche Stage o Level, è una zona è una raccolta di Act. Rappresenta un singolo livello di gioco.</li>
+  <li><strong>Act</strong>,  è un insieme di elementi da caricare, come Tilesheet, CLUT 3D, Map, Collision index etc. .</li>
+  <li><strong>Node</strong>, è un generico oggetto privo di funzionalità e collisioni. Usa coordinate assolute ed è privo di texture, animazioni ed effetti. Può avere nodi figli e nodi padri.</li>
+  <li><strong>Sprite</strong>, sottoclasse di Node, è un'immagine statica che ha una texture, una serie di effetti ed animazioni.</li>
+  <li><strong>Entity</strong>, sottoclasse di Sprite, è un oggetto dotato di Script, di una serie di Hitbox di tipo Entity collision e di una propria fisica.</li>
+  <li><strong>Script</strong>, è un listato di operazioni programmate. Può essere associato ad un Act o ad un Entity.</li>
+</ul>
+<hr />
+<p id="crediti"><strong>Crediti</strong></p>
+<p>XeEngine è un prodotto interamente sviluppato da Luciano Ciccariello (Xeeynamo). Per maggiori informazioni è possibile contattarmi in privato via e-mail all'indirizzo xeeynamo@hotmail.com. Se parte del prodotto, risorse del gioco o dell'editor e/o questa documentazione è stata fornita senza permessi, per favore contattatemi all'indirizzo sopra riportato.</p>
+</body>
+</html>

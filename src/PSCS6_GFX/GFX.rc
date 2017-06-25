@@ -1,0 +1,124 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "GFX-sym.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglese (Stati Uniti) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "GFX-sym.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""SimpleFormat.pipl""\r\n"
+    "#include ""About.rc""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+16050 DIALOGEX 0, 0, 495, 268
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simple Format Resource Remover"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,444,4,50,14
+    PUSHBUTTON      "&Cancel",2,444,23,50,14
+    LISTBOX         4,148,132,135,96,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Resource Identifier",3,145,118,137,12
+    LTEXT           "ID:",7,307,172,35,9
+    CONTROL         "&Keep Resource",13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,317,90,103,13
+    LTEXT           "runtime update",8,351,172,68,9
+    LTEXT           "Type:",5,307,159,35,9
+    LTEXT           "runtime update",6,353,156,68,9
+    LTEXT           "Name:",9,307,185,35,9
+    LTEXT           "runtime update",10,351,185,68,21
+    LTEXT           "Size:",11,307,209,35,9
+    LTEXT           "runtime update",12,351,209,68,10
+    LTEXT           "Width",IDC_STATIC,5,4,20,8
+    LTEXT           "Height",IDC_STATIC,5,20,22,8
+    LTEXT           "Resolution",IDC_STATIC,5,36,34,8
+    LTEXT           "Texture count",IDC_STATIC,5,52,45,8
+    LTEXT           "Mode",IDC_STATIC,5,68,19,8
+    LTEXT           "Destination",IDC_STATIC,5,84,36,8
+    EDITTEXT        IDC_WIDTH,55,2,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HEIGHT,55,18,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Compressed",IDC_CHECK_COMPRESSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,4,55,10
+    CONTROL         "Internal palette",IDC_CHECK_INTERNALPALETTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,17,63,10
+    COMBOBOX        IDC_MODE,55,66,51,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RESOLUTION,55,34,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_RES,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,96,34,11,14
+    EDITTEXT        IDC_TEXCOUNT,55,50,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TEXCOUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,96,49,11,14
+    EDITTEXT        IDC_DEST,55,80,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DEST,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,96,80,11,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    16050, DIALOG
+    BEGIN
+        RIGHTMARGIN, 494
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Inglese (Stati Uniti) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "GFX.pipl"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

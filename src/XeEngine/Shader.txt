@@ -1,0 +1,27 @@
+====== Vertex shader
+ 
+== Sola lettura
+vec4 gl_Vertex;			// Posizione del vertice (xyzw) da glVertex
+vec4 gl_Normal;			// Normale del vertice (xyz) da glNormal
+vec4 gl_Color;			// Colore del vertice (rgba) da glColor
+vec4 gl_MultiTexCoord0;	// Coordinate delle texture (xyzw)
+
+== Sola scrittura
+vec4 gl_Position;		// Nuova posizione del vertice
+vec4 gl_FrontColor;		// Colore del vertice per il davanti della primitiva
+vec4 gl_BackColor;		// Colore del vertice per il retro della primitiva
+vec4 gl_TexCoord;		// Coordinate della texture
+
+== Altre
+mat4 gl_ProjectionMatrix;
+mat4 gl_ModelViewMatrix;
+mat4 gl_ModelViewProjectionMatrix;	// gl_ProjectionMatrix*gl_ModelViewMatrix
+mat3 gl_NormalMatrix;				// Inversa della trasposta di gl_ModelViewMatrix
+
+
+====== Fragment shader
+
+vec4 gl_Color;			// colore originale del frammento calcolato per interpolazione del colore prodotto dal vertex shader in gl_FrontColor o gl_BackColor
+vec4 gl_FragColor;		// colore finale del frammento, cioe quello che verrà visualizzato sullo schermo se il depth test ha successo
+float gl_FragDepth;		// Profondità del frammento
+vec4 gl_FragCoord;		// contiene le coordinate del pixel all’interno della viewport, nel formato xyzw

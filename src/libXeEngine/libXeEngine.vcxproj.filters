@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="XeEngine.cpp" />
+    <ClCompile Include="Memory.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Level 1</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Level 1</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="Director.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX.cpp">
+      <Filter>Level 2\Image Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveTo.cpp">
+      <Filter>Level 2\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Level 1</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="XInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Level 5</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Level 3</Filter>
+    </ClCompile>
+    <ClCompile Include="CSOTN.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="SonicMD.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugConsole.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="StageList.cpp">
+      <Filter>Level 5</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteAnimation.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManagement.cpp">
+      <Filter>Level 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Level 1\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Level 1\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Level 1\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoD3D9.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoD3D11.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoGL.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoGL21.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoGL33.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoGLInit.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Video.cpp">
+      <Filter>Level 1\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="WinAPI.cpp">
+      <Filter>Level 1\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="WinGTK.cpp">
+      <Filter>Level 1\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="WinNull.cpp">
+      <Filter>Level 1\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Level 2</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic.cpp">
+      <Filter>Old stuff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XeEngine.h" />
+    <ClInclude Include="XeEngineLV0.h" />
+    <ClInclude Include="List.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="XeBase.h">
+      <Filter>Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Director.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveTo.h">
+      <Filter>Level 2\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="XInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Level 5</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteAnimation.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="PalAnimWrite.h">
+      <Filter>Level 4\PaletteAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="PalAnimWriteArray.h">
+      <Filter>Level 4\PaletteAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="PalAnimCycle.h">
+      <Filter>Level 4\PaletteAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="CSOTN.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="MAP.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="SonicMD.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="GFX.h">
+      <Filter>Level 2\Image Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugConsole.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="StageList.h">
+      <Filter>Level 5</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManagement.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Level 1\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Level 1\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Level 1\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Video.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoD3D9.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoD3D11.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoGL.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoGL21.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoGL33.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoGLInit.h">
+      <Filter>Level 1\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Level 1\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="WinNull.h">
+      <Filter>Level 1\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="WinAPI.h">
+      <Filter>Level 1\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="WinGTK.h">
+      <Filter>Level 1\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic.h">
+      <Filter>Old stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFormatList.h">
+      <Filter>Level 2\Image Formats</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Loader">
+      <UniqueIdentifier>{d113ced1-e260-4956-99e0-6560dd2409c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{db1b7f8c-f2cc-42d9-b887-b54bdbc3ff60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{4b7a1309-6d6c-4155-a5c8-332713cfff49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 5">
+      <UniqueIdentifier>{93466e76-28c5-425e-a301-f9b9f052e61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 4">
+      <UniqueIdentifier>{29a45885-de79-44cf-8f30-3b9136ff459c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 4\PaletteAnimation">
+      <UniqueIdentifier>{708eff09-579f-4251-9c23-26e4a1277ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 3">
+      <UniqueIdentifier>{a3de8385-7eb2-4672-a097-9afce548cbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 2">
+      <UniqueIdentifier>{dc663872-0a41-4814-8a8d-74944af4cb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 2\Image Formats">
+      <UniqueIdentifier>{1b658d0f-811f-47b0-8e9d-0513f128874c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 2\Action">
+      <UniqueIdentifier>{4db87e11-e058-450c-b6ef-d621a3bd697c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 1">
+      <UniqueIdentifier>{088ad00e-4f45-447e-a58a-045bfc2746bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 1\Video">
+      <UniqueIdentifier>{f0cbe2f2-2b96-4ae9-b4a9-eead17534306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 1\Math">
+      <UniqueIdentifier>{6f657775-9ea2-4d0a-b3bd-556490d78405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level 1\Window">
+      <UniqueIdentifier>{967ccbd4-d98f-49a3-a7ad-28b8c6a492e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Old stuff">
+      <UniqueIdentifier>{c745788a-60ae-4d83-8c45-ddaaf0072e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Documentation.txt" />
+  </ItemGroup>
+</Project>

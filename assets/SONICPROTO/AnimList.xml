@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Stopped">
+    <entry name="Stopped">
+      <description>L'oggetto è fermo</description>
+    </entry>
+    <entry name="Waiting">
+      <description>Quando l'oggetto è in fase di attesa da un po di tempo</description>
+    </entry>
+    <entry name="Taunting">
+      <description>L'oggetto ha un'aria presuntuosa, magari invitando il giocatore a muoversi</description>
+    </entry>
+    <entry name="Bored">
+      <description>L'oggetto ha un aria scocciata</description>
+    </entry>
+    <entry name="Serious">
+      <description>L'oggetto assume una posa d'attesa seria</description>
+    </entry>
+    <entry name="Scared">
+      <description>L'oggetto assume una posa d'attesa dove si mostra preoccupato</description>
+    </entry>
+    <entry name="Denied">
+      <description>L'oggetto guarda lo schermo e scuote la testa per indicare il "No"</description>
+    </entry>
+    <entry name="Tired">
+      <description>L'oggetto mostra una faccia stanca/affannata</description>
+    </entry>
+    <entry name="Sitting">
+      <description>L'oggetto si siede</description>
+    </entry>
+    <entry name="Winning">
+      <description>L'oggetto mostra una posa vincente</description>
+    </entry>
+    <entry name="Victory pose">
+      <description>L'oggetto fà una veloce posa di vittoria</description>
+    </entry>
+    <entry name="Waiting damaged">
+      <description>L'oggetto mostra un'aria ferita, sanguina o è sofferente</description>
+    </entry>
+    <entry name="Cold waiting">
+      <description>L'oggetto è in fase di attesa in un livello freddo</description>
+    </entry>
+    <entry name="Hot waiting">
+      <description>L'oggetto è in fase di attesa in un livello caldo</description>
+    </entry>
+    <entry name="Kneeling">
+      <description>L'oggetto si inginocchia</description>
+    </entry>
+    <entry name="Lowering">
+      <description>L'oggetto si abbassa</description>
+      <subanim name="Going down (default)"/>
+      <subanim name="Going up"/>
+    </entry>
+    <entry name="Ledge front">
+      <description>L'oggetto sta sul ciglio di un burrone ed è girato verso di esso</description>
+      <subanim name="Default"/>
+      <subanim name="Short distance"/>
+      <subanim name="Long distance"/>
+    </entry>
+    <entry name="Ledge back">
+      <description>L'oggetto sta sul ciglio di un burrone ed è girato nel verso opposto</description>
+      <subanim name="Default"/>
+      <subanim name="Short distance"/>
+      <subanim name="Long distance"/>
+    </entry>
+    <entry name="Drowning">
+      <description>L'oggetto è fermo e sta per annegare</description>
+    </entry>
+    <entry name="Looking up">
+      <description>L'oggetto si alza mentre prima era in ginocchio</description>
+      <subanim name="Going up (default)"/>
+      <subanim name="Going down"/>
+    </entry>
+    <entry name="Looking down">
+      <description>L'oggetto si alza mentre prima era abbassato</description>
+      <subanim name="Going down (default)"/>
+      <subanim name="Going up"/>
+    </entry>
+  </category>
+  <category name="Movement">
+    <entry name="Start walking">
+      <description>L'oggetto comincia a camminare. In Castlevania se cominci a muoverti da fermo, viene eseguita un'animazione specifica.</description>
+    </entry>
+    <entry name="Walking">
+      <description>L'oggetto è in movimento. Usato per le camminate normali tipo quando Sonic inizia a camminare o quando in Castlevania il personaggio cammina.</description>
+    </entry>
+    <entry name="Running">
+      <description>L'oggetto corre. Abbastanza ovvio immagino XD.</description>
+    </entry>
+    <entry name="Running boost">
+      <description>L'oggetto si da un ulteriore slancio di velocità per andare alla velocità massima. Usato in Sonic Advance 2/3.</description>
+    </entry>
+    <entry name="Max Speed">
+      <description>L'oggetto ha raggiunto la velocità massima. Tipo la velocità massima in Sonic CD.</description>
+    </entry>
+    <entry name="Launcher">
+      <description>L'oggetto viene scaraventato a grande velocità. Usato in Worky Workbench in Sonic CD.</description>
+    </entry>
+    <entry name="Braking">
+      <description>L'oggetto frena. Classico esempio è quando Sonic frena ad alta velocità</description>
+    </entry>
+    <entry name="Skidding">
+      <description>L'oggetto slitta sul terreno. Più compelsso rispetto a Braking, per esempio se slitta sul ghiaccio.</description>
+    </entry>
+    <entry name="Turning">
+      <description>L'oggetto cambia traiettoria di camminata. A Castlevania quando i personaggi si girano, viene eseguita un'animazione specifica.</description>
+    </entry>
+    <entry name="Dashing">
+      <description>L'oggetto scatta in avanti. Usato in MegaMan X1.</description>
+    </entry>
+    <entry name="Air dashing">
+      <description>L'oggetto scatta davanti in aria. Usato in MegaMan X2.</description>
+    </entry>
+    <entry name="Up dashing">
+      <description>L'oggetto scatta verso l'alto. Usato in MegaMan X3.</description>
+    </entry>
+    <entry name="Pushing">
+      <description>L'oggetto spinge o cerca di spingere qualcosa.</description>
+    </entry>
+    <entry name="Rolling">
+      <description>L'oggetto rotola.</description>
+    </entry>
+    <entry name="Crawling">
+      <description>L'oggetto si muove mentre è abbassato.</description>
+    </entry>
+    <entry name="Backstep">
+      <description>L'oggetto esegue uno scatto evasivo all'indietro.</description>
+    </entry>
+    <entry name="Quickstep">
+      <description>L'oggetto esegue uno scatto evasivo in avanti.</description>
+    </entry>
+  </category>
+  <category name="Jumping">
+	<entry name="Jump">
+	  <description>L'oggetto salta. Più intuitivo di così si muore.</description>
+	</entry>
+	<entry name="Spring jump">
+	  <description>L'oggetto sviene scaraventato da una molla.</description>
+	  <subanim name="Low jump (Sonic 1)"/>
+	  <subanim name="Mid jump (Sonic 2/3)"/>
+	  <subanim name="High jump (Sonic CD)"/>
+	</entry>
+	
+  </category>
+  <category name="Hurting">
+    <entry name="Hurted">
+      <description>L'oggetto viene colpito. Standard di quando si viene colpiti</description>
+    </entry>
+    <entry name="Damaged">
+      <description>L'oggetto viene colpito ed ha subito danni. Più grave di Hurted</description>
+    </entry>
+    <entry name="Destroying">
+      <description>L'oggetto sta per essere distrutto</description>
+    </entry>
+    <entry name="Destroyed">
+      <description>L'oggetto viene distrutto</description>
+    </entry>
+    <entry name="Exploding">
+      <description>L'oggetto sta per esplodere</description>
+    </entry>
+    <entry name="Exploded">
+      <description>L'oggetto è stato distrutto</description>
+    </entry>
+    <entry name="Electrified">
+      <description>L'oggetto prende una scossa</description>
+    </entry>
+    <entry name="Burning">
+      <description>L'oggetto è in fiamme</description>
+    </entry>
+    <entry name="Freezed">
+      <description>L'oggetto è congelato</description>
+    </entry>
+    <entry name="Die">
+      <description>L'oggetto perde una vita.</description>
+      <subanim name="Sonic die"/>
+      <subanim name="Megaman explosion"/>
+      <subanim name="Metroid armor"/>
+      <subanim name="Castlevania floor"/>
+      <subanim name="Castlevania air"/>
+    </entry>
+    <entry name="Drowned">
+      <description>L'oggetto è affogato :(.</description>
+    </entry>
+  </category>
+  <category name="Attacks">
+    <entry name="Standard attack">
+      <description>Attacco standard. Di solito è usato poco dato che questo tipo di attacco sarà condiviso da ogni oggetto presente nel gioco.</description>
+    </entry>
+    <entry name="Punch">
+      <description>Attacca con il pugno</description>
+      <subanim name="Simple punch"/>
+      <subanim name="Fast punch"/>
+      <subanim name="Strong punch"/>
+      <subanim name="Punch start charging"/>
+      <subanim name="Punch charging"/>
+      <subanim name="Punch charged"/>
+      <subanim name="Punch charge released"/>
+    </entry>
+  </category>
+  <category name="Underwater">
+    <entry name="Water stopped">
+      <description>L'oggetto è fermo ma sott'acqua</description>
+    </entry>
+    <entry name="Breathing">
+      <description>L'oggetto respira sott'acqua</description>
+    </entry>
+    <entry name="Water bubble">
+      <description>L'oggetto prende una bolla sott'acqua (come la serie di Sonic)</description>
+    </entry>
+  </category>
+  <category name="Dashing">
+    <entry name="Spin dash">
+      <description>L'oggetto è in spindash</description>
+      <subanim name="Waiting for release"/>
+      <subanim name="Prepare to charging"/>
+      <subanim name="Charging"/>
+      <subanim name="Release"/>
+    </entry>
+  </category>
+</animlist>

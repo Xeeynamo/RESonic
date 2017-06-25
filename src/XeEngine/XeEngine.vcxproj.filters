@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="WndProc.cpp" />
+    <ClCompile Include="XeEntity.cpp">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFont.cpp">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX.cpp">
+      <Filter>File Formats\Pictures</Filter>
+    </ClCompile>
+    <ClCompile Include="TGA.cpp">
+      <Filter>File Formats\Pictures</Filter>
+    </ClCompile>
+    <ClCompile Include="LUT.cpp">
+      <Filter>File Formats\Colors</Filter>
+    </ClCompile>
+    <ClCompile Include="CSOTN.cpp">
+      <Filter>Other games</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFile.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="XeMemory.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="XeEffect.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="XeScene.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="XeTexture.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="XeImage.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="XeLevel.cpp">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClCompile>
+    <ClCompile Include=".\ANM.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="XeShape.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="BLK.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="MAP.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="HBX.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="XeObject.cpp">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClCompile>
+    <ClCompile Include="XeObjectDebug.cpp">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClCompile>
+    <ClCompile Include="XeLevelObject.cpp">
+      <Filter>Engine\Engine LV3 - XeEngine core\XeLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="XeAnimation.cpp">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClCompile>
+    <ClCompile Include="XeObjectAnimation.cpp">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugConsole.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="0001_Sonic.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sonic.cpp">
+      <Filter>Other games\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include=".\SonicDec.cpp">
+      <Filter>Other games\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="Sonic2.cpp">
+      <Filter>Other games\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="Sonic1.cpp">
+      <Filter>Other games\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="CLI.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectList.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sonic1LVL.cpp">
+      <Filter>Other games\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="DTL.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="XeLevelIO.cpp">
+      <Filter>Engine\Engine LV3 - XeEngine core\XeLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Level.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_LevelSelect.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="OBP.cpp">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="0010_Ring.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="001A_Pathswap.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSelector.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_Block.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_HBX.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_LUT.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_Map.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Editor_Object.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_Preview.cpp">
+      <Filter>Editor\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="MainEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Preview.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="XeSystem.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSelector.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL.cpp">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelMap.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MapEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkSelector.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Slidebar.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="XeMath.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextMenu.cpp">
+      <Filter>Editor\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="XeColor.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="XeString.cpp">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_tests.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XeEngine.h" />
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="XeEntity.h">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFont.h">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClInclude>
+    <ClInclude Include="glex.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="GFX.h">
+      <Filter>File Formats\Pictures</Filter>
+    </ClInclude>
+    <ClInclude Include="TGA.h">
+      <Filter>File Formats\Pictures</Filter>
+    </ClInclude>
+    <ClInclude Include="LUT.h">
+      <Filter>File Formats\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="CSOTN.h">
+      <Filter>Other games</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherEngines.h">
+      <Filter>Other games</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFile.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="XeMemory.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="XeEngineLV1.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="XeBase.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="XeEffect.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="XeScene.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="XeTexture.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="XeImage.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="XeLevel.h">
+      <Filter>Engine\Engine LV3 - XeEngine core</Filter>
+    </ClInclude>
+    <ClInclude Include="XeEngineLV2.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include=".\ANM.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="XeShape.h">
+      <Filter>Engine\Engine LV2 - 3D, Shader and Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="BLK.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFormats.h">
+      <Filter>File Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="MAP.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="HBX.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="XeObject.h">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClInclude>
+    <ClInclude Include="XeAnimation.h">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClInclude>
+    <ClInclude Include="XeObjectAnimation.h">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectList.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugConsole.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="0001_Sonic.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sonic.h">
+      <Filter>Other games\Sonic</Filter>
+    </ClInclude>
+    <ClInclude Include="CLI.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="DTL.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Level.h">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_LevelSelect.h">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="OBP.h">
+      <Filter>File Formats\Other stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="0010_Ring.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="001A_Pathswap.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSelector.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor.h">
+      <Filter>Editor\OLD</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorRES.h">
+      <Filter>Editor\OLD</Filter>
+    </ClInclude>
+    <ClInclude Include="MainEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Preview.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="XeSystem.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSelector.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelMap.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MapEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkSelector.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Slidebar.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="XeMath.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="ContextMenu.h">
+      <Filter>Editor\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="XeObjectDef.h">
+      <Filter>Engine\Engine LV4 - Platform engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="XeColor.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="XeString.h">
+      <Filter>Engine\Engine LV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_tests.h">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{d4d0dce5-c743-44a9-a0b9-4009a827ad57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Formats">
+      <UniqueIdentifier>{dd875541-d01d-46af-9cae-bbf43dfee150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Formats\Pictures">
+      <UniqueIdentifier>{fd738a20-1e3e-4121-9b22-de6d8bdd390f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Formats\Colors">
+      <UniqueIdentifier>{a4646cb7-66c5-48f6-89f9-8b1f76155faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{efb30c75-18eb-4443-b599-3bf9c93cbf89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3129a334-6948-4152-a8ef-2e118982eb97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Formats\Other stuff">
+      <UniqueIdentifier>{7f2a3847-8015-4c07-aa82-6dffe7a9961c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV2 - 3D, Shader and Texture">
+      <UniqueIdentifier>{12317ba3-3135-4d6d-a203-21c3cdcf158d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV2 - 3D, Shader and Texture\OpenGL">
+      <UniqueIdentifier>{050c1ae6-3573-4cbc-a527-71050a59bff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV3 - XeEngine core">
+      <UniqueIdentifier>{3cf2e8ee-7352-426c-8d00-740f8ef0aac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV4 - Platform engine">
+      <UniqueIdentifier>{d1a841f7-2ee7-4782-b2a5-4b77308fc1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{1755b92d-609f-4b1a-9e2f-5b5cced5755a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV3 - XeEngine core\XeLevel">
+      <UniqueIdentifier>{c74ba10b-4f77-4e53-874e-d9cc510c91a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shader">
+      <UniqueIdentifier>{b0d5aac7-a1bf-4a4f-bcf0-72c58be16f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{f2df0240-ac2f-4dc7-bdb9-e45b7347f3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{44208a68-44af-41f2-85b0-50c9f77a95f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameStates">
+      <UniqueIdentifier>{a6f8e297-0090-4e09-8f63-59605021a7c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other games">
+      <UniqueIdentifier>{56becb34-be05-403a-8c6e-f981ef351907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other games\Sonic">
+      <UniqueIdentifier>{f02aaf56-05ef-4832-972f-502ef4f4d835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Controls">
+      <UniqueIdentifier>{a09d2b67-cced-40b3-97c8-0f0118522592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\OLD">
+      <UniqueIdentifier>{0ca56b78-764f-4282-bddd-3323d00301bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Engine LV1">
+      <UniqueIdentifier>{9d7cac96-3101-4d5a-b6ad-848ed93e2d67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shader.txt">
+      <Filter>Resources\Shader</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\STHX\Game\shader.vp.gsls">
+      <Filter>Resources\Shader</Filter>
+    </None>
+    <None Include="..\..\..\STHX\Game\shader.fp.gsls">
+      <Filter>Resources\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

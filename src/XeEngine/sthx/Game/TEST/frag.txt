@@ -1,0 +1,2 @@
+#version 110
+uniform sampler3D texture;varying vec3 texcoord;varying vec4 vertex_color;void main(){float parallaxCoord = 0.0;vec4 precolor = texture3D(texture, vec3(texcoord.x + parallaxCoord, texcoord.yz));gl_FragColor = precolor * vertex_color;}

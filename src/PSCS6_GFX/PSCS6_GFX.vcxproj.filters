@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="GFXTerminology.h" />
+    <ClInclude Include="GFX.h" />
+    <ClInclude Include="Common\DialogUtilities.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\FileUtilities.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PIDLLInstance.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PIUSuites.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PIUtilities.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PIDefines.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PIUI.h">
+      <Filter>Common\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="PSBridge.h" />
+    <ClInclude Include="GFXLib.h">
+      <Filter>GFXLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IOLib.h">
+      <Filter>GFXLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GFX-sym.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GFXUI.cpp" />
+    <ClCompile Include="GFX.cpp" />
+    <ClCompile Include="GFXScripting.cpp" />
+    <ClCompile Include="Common\DialogUtilitiesWin.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\FileUtilities.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\FileUtilitiesWin.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PIDLLInstance.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PIUSuites.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PIUtilities.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PIUtilitiesWin.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PIWinUI.cpp">
+      <Filter>Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GFXLib.cpp">
+      <Filter>GFXLib</Filter>
+    </ClCompile>
+    <ClCompile Include="IOLib.cpp">
+      <Filter>GFXLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GFX.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1b93cbdf-0cf1-4102-9f80-4ad6d1ae8c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Source">
+      <UniqueIdentifier>{c949b7f1-be7d-44de-a13a-61f570ccf481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Include">
+      <UniqueIdentifier>{5977ef53-fe5f-40cf-aa0a-42b0a7b8ba8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{7da87136-147e-4950-be79-c480ab66cc3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GFXLib">
+      <UniqueIdentifier>{6a482847-5ccd-4de0-be70-b347db89fb41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GFX.r" />
+  </ItemGroup>
+</Project>

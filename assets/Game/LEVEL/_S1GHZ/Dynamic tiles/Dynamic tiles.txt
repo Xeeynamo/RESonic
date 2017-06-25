@@ -1,0 +1,40 @@
+Waterfall:	1A9 1AA
+Flower large:	1AB 1AC 1AD 1AE
+
+
+358-35B	$6B00	Nem_Stalk:	"artnem\GHZ Flower Stalk.bin"
+
+
+378-37F	$6F00	Art_GhzWater:	"artunc\GHZ Waterfall.bin"
+
+35C-36B	$6B80	Art_GhzFlower1:	"artunc\GHZ Flower Large.bin"
+
+
+$6D80	Art_GhzFlower2:	"artunc\GHZ Flower Small.bin"
+
+$7000	Nem_Swing:	"artnem\GHZ Swinging Platform.bin"
+
+
+$71C0	Nem_Bridge:	"artnem\GHZ Bridge.bin"
+
+
+	Nem_GhzUnkBlock:"artnem\Unused - GHZ Block.bin"
+
+$7540	Nem_Ball:	"artnem\GHZ Giant Ball.bin"
+
+
+$A360	Nem_Spikes:	"artnem\Spikes.bin"
+
+
+	Nem_GhzLog:	"artnem\Unused - GHZ Log.bin"
+
+
+$7300	Nem_SpikePole:	"artnem\GHZ Spiked Log.bin"
+
+
+$7A00	Nem_PplRock:	"artnem\GHZ Purple Rock.bin"
+
+
+$A1E0	Nem_GhzWall1:	"artnem\GHZ Breakable Wall.bin"
+
+$6980	Nem_GhzWall2:	"artnem\GHZ Edge Wall.bin"

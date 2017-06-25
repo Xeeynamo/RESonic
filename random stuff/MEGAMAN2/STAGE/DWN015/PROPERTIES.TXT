@@ -1,0 +1,18 @@
+#valuesize 1
+#strnull 0
+
+const StageName = "HEAT MAN",
+(StageName).b, StageName,
+
+0, ; Tile GFX
+0, ; Tile palette
+0, ; Chunks
+0, ; Hitboxes
+0, ; Collision index
+0, ; Map
+0, ; Background
+0, ; Object mapping
+0, ; Dynamic palettes
+0, ; Dynamic tiles
+0, ; Alignment
+0, ; Alignment

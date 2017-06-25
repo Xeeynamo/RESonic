@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Preview.cpp" />
+    <ClCompile Include="TextureEditor.cpp" />
+    <ClCompile Include="ChunkEditor.cpp" />
+    <ClCompile Include="MainEditor.cpp" />
+    <ClCompile Include="MapEditor.cpp" />
+    <ClCompile Include="ChunkSelector.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextMenu.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelMap.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="Slidebar.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSelector.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteEditor.cpp" />
+    <ClCompile Include="PaletteSelector.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedMenu.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkTileSelector.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSelect.cpp" />
+    <ClCompile Include="HitboxEditor.cpp" />
+    <ClCompile Include="HitboxShape.cpp">
+      <Filter>CustomControls</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Preview.h" />
+    <ClInclude Include="TextureEditor.h" />
+    <ClInclude Include="ChunkEditor.h" />
+    <ClInclude Include="MainEditor.h" />
+    <ClInclude Include="MapEditor.h" />
+    <ClInclude Include="ChunkSelector.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="ContextMenu.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelMap.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="Slidebar.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSelector.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteEditor.h" />
+    <ClInclude Include="PaletteSelector.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedMenu.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkTileSelector.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelSelect.h" />
+    <ClInclude Include="HitboxEditor.h" />
+    <ClInclude Include="HitboxShape.h">
+      <Filter>CustomControls</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="XeControl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CustomControls">
+      <UniqueIdentifier>{0afbb750-76b6-4337-abf6-5a225fd5c950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{40f7e53e-5281-48ed-8bf0-4e4def14846e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

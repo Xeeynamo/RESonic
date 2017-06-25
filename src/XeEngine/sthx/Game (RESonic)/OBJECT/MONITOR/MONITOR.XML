@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Object">
+    <entry name="Screen">
+      <description>Schermo. Di default quello selezionato è il frame di sonic, ma il base al subid dell'oggetto, questo cambierà.</description>
+    </entry>
+    <entry name="Interference">
+      <description>Interferenza del monitor.</description>
+    </entry>
+    <entry name="Destroyed">
+      <description>Animazione eseguita alla distruzione del monitor.</description>
+    </entry>
+  </category>
+</animlist>

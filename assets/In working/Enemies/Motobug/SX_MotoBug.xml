@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Object">
+    <entry name="Body parts (stop)">
+      <description>Parti del corpo del MotoBug. Qui ci saranno i pezzi composti da un solo frame.</description>
+      <subanim name="Body"/>
+      <subanim name="Exhaust Pipe"/>
+      <subanim name="Wheel"/>
+      <subanim name="Arm 1"/>
+      <subanim name="Arm 2"/>
+    </entry>
+    <entry name="Body parts (anim)">
+      <description>Parti del corpo del MotoBug. Qui ci saranno i pezzi regolarmente animati.</description>
+      <subanim name="Body"/>
+      <subanim name="Exhaust Pipe"/>
+      <subanim name="Wheel"/>
+      <subanim name="Arm 1"/>
+      <subanim name="Arm 2"/>
+    </entry>
+    <entry name="Body parts (vibr)">
+      <description>Parti del corpo del MotoBug. Qui ci saranno i pezzi che vibreranno, ovvero quando MotoBug è in moto.</description>
+      <subanim name="Body"/>
+      <subanim name="Exhaust Pipe"/>
+      <subanim name="Wheel"/>
+      <subanim name="Arm 1"/>
+      <subanim name="Arm 2"/>
+    </entry>
+    <entry name="Smoke">
+      <description>Il fumo del tubo di scarico</description>
+      <subanim name="Smoke animated"/>
+      <subanim name="Smoke 1"/>
+      <subanim name="Smoke 2"/>
+    </entry>
+    <entry name="Assembled">
+      <description>MotoBug assemblato, fermo, in movimento o altro.</description>
+      <subanim name="Complete body"/>
+      <subanim name="Stop"/>
+      <subanim name="Active"/>
+    </entry>
+  </category>
+</animlist>

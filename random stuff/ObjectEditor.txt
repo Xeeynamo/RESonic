@@ -1,0 +1,22 @@
+Changelog:
+ - B1: Implementato il property editor e il frame editor
+ - B2: Implementato l'hitbox editor
+ - B3: Implementato l'animation editor
+ - B4: Implementate le sottoanimazioni nell'animation editor, zoom e filtri
+ - B5: Implementata la nuova lista
+
+Descrizione:
+Il programma si avvia in modalità nuovo progetto. Si può già cominciare a lavorare su una nuova animazione.
+Tutte le operazioni di apertura e salvataggio si adoperereanno nella scheda "Object".
+Ogni qualvolta il file viene salvato, viene anche creata una copia di backup del documento precedente.
+La scheda "Name" rappresenta il nome dell'oggetto, il nome della spritesheet priva di estensione e il nome che avrà il file quando verrà salvato. Quindi TEORICAMENTE non è possibile avere due file diversi con lo stesso nome interno.
+
+Scheda Frames:
+Qui si creeranno i singoli frame.
+Total frame rappresenta il numero di frame correntemente implementati.
+Current frame rappresenta il frame correntemente selezionato e/o visibile. (questa informazione non sarà salvata nel file).
+La scheda frame sarà univoca per ogni frame.
+Sheet rappresenta la sheet corrente. Il gioco finale avrà multiple spritesheet da 256x256 l'una, l'editor invece simula questa cosa prendendo un'immagine singola (ad esempio 200x500) splittandola in multipli di 256 per l'altezza (quindi diventerebbero due immagini, una da 200x256 e l'altra da 200x244). 
+La collisione NON è stata ancora implementata
+Rotation test consente di fare un test sulla rotazione per verificare che i punti di centro siano esatti.
+Quando il mouse si trova fuori il blackbox verrà mostrato il frame corrente, viceversa mostrerà l'intera spritesheet. E' possibile selezionare il frame interessato dalla spritesheet trascinando il cursore tenendo premuto il tasto destro o sinistro del mouse.

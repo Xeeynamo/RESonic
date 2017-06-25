@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Object">
+    <entry name="Character intro">
+      <description>Usata nella schermata principale</description>
+      <subanim name="Part 1"/>
+      <subanim name="Part 2"/>
+    </entry>
+  </category>
+</animlist>

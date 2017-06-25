@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="XeCPU.h" />
+    <ClInclude Include="XeASM.h" />
+    <ClInclude Include="XeASM_Error.h" />
+    <ClInclude Include="List.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\XeCPU.cpp" />
+    <ClCompile Include="XeASM.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="XeASM_Error.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.asm" />
+    <None Include="opcodes.xlsx" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XeEngine documentation - Index</title>
+<style type="text/css">
+.FunctionDeclaration {
+	font-weight: bold;
+	color: #033;
+}
+.ParameterDescription {
+	font-style: italic;
+	color: #039;
+}
+.EnumerationDescription {
+	font-style: italic;
+	color: #630;
+}
+.VariableType {
+	font-style: italic;
+	color: #09C;
+}
+.ConstantType {
+	font-style: italic;
+	color: #906;
+}
+</style>
+</head>
+
+<body>
+<p><strong><center>Documentazione ufficiale di XeEngine</center></strong></p>
+<p><strong>Sommario</strong></p>
+<ul>
+  <li><a href="#introduzione">Introduzione</a></li>
+  <li><a href="#prerequisiti">Prerequisiti</a></li>
+  <li><a href="#sdk">XeSDK</a></li>
+  <li><a href="#xewidget">XeWidget</a></li>
+  <li><a href="#xeeditor">XeEditor</a>  </li>
+  <li><a href="#filetypes">Tipi di file</a></li>
+  <li>Le texture</li>
+  <li><a href="#physicandcollision">Fisica e collisioni</a></li>
+  <li>Gli oggetti</li>
+  <li><a href="#terminologie">Terminologie</a></li>
+  <li><a href="#crediti">Crediti</a></li>
+</ul>
+<hr />
+<p id="introduzione"><strong>Introduzione</strong></p>
+<p>XeEngine è un framework, formato da una serie di librerie che aiutano lo sviluppo di giochi o software principalmente 2D. Il framework è pensato per essere multipiattaforma ed ha un  livello di astrazione tale da offerte funzionalità che comunicheranno con il sistema operativo su una determinata macchina senza conoscere questi ultimi. Il framework offre un sistema a livelli, che aiuta lo sviluppo in base a ciò che lo sviluppatore cerca. E' possibile usare lo XeSDK per sviluppare direttamente con codice nativo C++,  XeScript per generare del bytecode compatibile con ogni macchina senza necessariamente ricompilare il codice per ognuna, XeWidget per creare applicazioni basati su bottoni e caselle, ed infine XeEditor, l'editor integrato che può aiutare allo sviluppo di giochi. Tutto questo insieme forma XeEngine.<br />
+  NOTA: XeEngine è un prodotto ancora in fase di sviluppo, perciò la documentazione potrebbe non essere aggiornata instantaneamente in base alle ultime aggiunte nell'eseguibile o viceversa.</p>
+<p><strong id="prerequisiti">Prerequisiti</strong></p>
+<p>I requisiti minimi sono 64MB di memoria RAM, un processore da almeno 0.5 GHz ed una scheda video da 32MB che supporta OpenGL 1.1 e / o DirectX 9.0a.<br />
+  I requisiti ottimali invece, sono 128MB di memoria RAM, un processore da 1 GHz ed una scheda video da 128MB che supporta OpenGL 2.1 e / o DirectX 9.0c assieme a Pixel Shader 2.0.<br />
+  Soddisfando i requisiti ottimali, si ha una gestione nativa delle palette, incrementando enormemente le performance. Nel caso dei requisiti minimi il sistema di palette viene emulato, ma questa tecnica non garantisce performance soddisfacenti.<br />
+Come sistema operativi e macchine, la build corrente è stata provata solo su una macchina avente Microsoft(r) Windows 8, ma è garantita la compatibilità anche da Windows XP in poi. Sono in programma delle cross-builds per sistemi Unix, Android, Windows Phone 8, Windows RT e Raspberry Pi. Non ci sono piani per i sistemi Mac OS X e iOS. </p>
+<hr />
+<h1 id="sdk">XeSDK</h1>
+<p>XeSDK è un Software Development Kit sviluppato in C++11. Per includerlo nel proprio progetto, includere l'header XeSDK.h e linkare la liberria libXeSDK.lib.<br />
+  La versione correntemente in sviluppo richiede il linguaggio di programmazione C++ e un IDE basato sul compilatore MVCPP, come ad esempio Visual Studio.
+<br />
+</p>
+<hr />
+<h1 id="xewidget"><strong></strong>XeWidget</h1>
+<p>XeWidget è una liberira per creare delle interfacce grafiche all'interno di XeEngine. Essa fornisce una serie di controlli (chiamati Widget) che serviranno per la creazione di finestre, caselle di testo, caselle di spunte, bottoni e molto altro.</p>
+<hr />
+<h1 id="xeeditor"><strong></strong>XeEditor </h1>
+<p>Lo XeEditor è un editor integrato nel gioco, disponibile solo nella modalità Developer dell'eseguibile XeEngine. </p>
+<ol>
+  <li></li>
+</ol>
+<p><a href="e_chunk_03.png"><img src="res/e_chunk_03.png" width="100" height="110" /></a></p>
+<p>Operazioni come flipping e mirroring sono supportate sui singoli tile grazie alle apposite checkbox</p>
+<p><a href="e_chunk_04.png"><img src="res/e_chunk_04.png" width="218" height="146" /></a></p>
+<p>Il Depth level è molto utile nel caso si vuole specificare se un determinato tile è presente avanti o dietro il livello delle entità. Questo si può applicare in ogni layer di una singola mappa.</p>
+<p id="xeeditor_hitbox"><strong>L'Hitbox editor</strong></p>
+<p>TODO</p>
+<p id="xeeditor_game"><strong>La modalità game</strong></p>
+<p>TODO</p>
+<hr />
+<p id="filetypes"><strong>Tipi di file</strong></p>
+<p>TODO</p>
+<hr />
+<p id="physicandcollision"><strong>Fisica e collisioni</strong></p>
+<p>Variabili da impostare per ogni oggetto:</p>
+<ul>
+  <li><strong>acceleration</strong>, velocità di accelerazione di un oggetto.</li>
+  <li><strong>deceleration</strong>, velocità di frenata.</li>
+  <li><strong>friction</strong>, forza di decelerazione dell'oggetto quando esso è sul terreno.</li>
+  <li><strong>minspeed</strong>, velocità minima dell'oggetto. abs(inertia) non può essere minore di esso.</li>
+  <li><strong>maxspeed</strong>, velocità massima dell'oggetto. abs(inertia) non può essere maggiore di esso.</li>
+  <li><strong>gravity</strong>, forza di gravità che trascina l'oggetto verso il basso. Teoricamente il valore di gravità è unica e l'oggetto cade in base al suo peso, ma per semplicità di progettazione si è deciso di adottare solo questa variabile.</li>
+  <li><strong>maxgravity</strong>, velocità gravitazionale massima.</li>
+  <li><strong>jump</strong>, forza del salto.</li>
+  <li><strong>jumpmin</strong>, numero di pixel minimi per il salto.</li>
+  <li><strong>airaccmin</strong>, troppo difficile da spiegare a parole WTF</li>
+  <li><strong>brake</strong>, se abs(inertia) &gt;= brake, allora fa vedere l'animazione della frenata.</li>
+  <li><strong>ducking</strong>, se abs(inertia) &lt; ducking, allora l'oggetto può eseguire le funzioni LookDown e LookUp.</li>
+</ul>
+<p>Variabili di uso interno dell'Engine</p>
+<ul>
+  <li><strong>inertia</strong>, velocità dell'oggetto. Questa è la variabile che è influenzata da acceleration, deceleration, friction e simili.</li>
+  <li><strong>speedx</strong>, velocità X dell'oggetto, dipende da inertia ed angle.</li>
+  <li><strong>speedy</strong>, velocità Y dell'oggetto, dipende da inertia ed angle.</li>
+  <li><strong>angle</strong>, angolo di rotazione dell'oggetto. Utile per trasformare inertia in speedx e speedy o per descrivere come l'oggetto si deve comportare con le Field collision.</li>
+</ul>
+<hr />
+<p id="terminologie"><strong>Terminologie</strong></p>
+<ul>
+  <li id="telecamera"><strong>Camera</strong>, è quell'area di visualizzazione del livello che solitamente segue un  oggetto. I suoi parametri sono le coordinate X, Y e Z.</li>
+  <li><strong>BPP</strong> (Bit Per Pixel), quanto un singolo pixel di un'immagine prende di spazio espresso in bit.</li>
+  <li id="tile"><strong>Tile</strong>, una singola immagine quadratica grande 16x16 o comunque multipla di 16.</li>
+  <li id="palette"><strong>Palette</strong>, una riga di colori a cui un Tile di 4bpp o 8bpp fa riferimento. Una palette contiene 256 colori.</li>
+  <li id="clut"><strong>CLUT</strong> (Color Look-Up Table), o anche tabella di colori, è una raccolta di palette.</li>
+  <li><strong>CLUT 3D</strong>, tabella tridimensionale di colori dove la dimensione X è il colore al quale un singolo pixel fa riferimento, la dimensione Y è la palette correntemente selezionata e la dimensione Z è la CLUT correntemente selezionata</li>
+  <li id="tilesheet"><strong>Tilesheet</strong>, raccolta di Tile posizionata in una texture a tre dimensioni. Una tilesheet può avere una dimensione espressa in Tile di 16x16 ed una profondità da 1 ad un massimo di 256</li>
+  <li id="chunk"><strong>Chunk</strong>, un blocco quadratico di dimensione 8x8 tile (o comunque un multiplo di 2). Ogni Tile contenuto in un Chunk ne descrive a quale Palette fare riferimento, il tile di riferimento nella texture ed altre proprietà quali la profondità, Flip e Mirror e proprietà del percorso.</li>
+  <li id="scene"><strong>Scene</strong>, è un blocco di dimensione quadratica 4x4 Chunk.</li>
+  <li id="flip"><strong>Flip</strong>, una tecnica di visualizzazione che consente di ruotare orizzontalmente o verticalmente di 180° una immagine. Soliamente vengono usati i termini <strong>FlipX</strong> (o <strong>Mirror</strong>) o <strong>FlipY</strong> per rappresentare il tipo di rotazione.</li>
+  <li><strong>Hitbox</strong>, è quell'area che genera un evento di collisione se condivide almeno uno stesso pixel nell'area di gioco</li>
+  <li id="fieldcollision"><strong>Field collision</strong>, è una Hitbox che avviene tra un oggetto ed il terreno. L'oggetto non potrà mai passare attraverso questo tipo di Hitbox. Ogni Field collision ha il proprio flag di evento ed una propria angolazione verticale ed orizzontale con una precisione di 1,411</li>
+  <li id="objectcollision"><strong>Entity collision</strong>, è il tipo di collisione che avviene tra due entità, generando un evento.</li>
+  <li><strong>Layer</strong>, un foglio virtuale bidimensionale con una sua dimensione espressa in Scene che raccoglie un insieme di Chunk. Questo stato mette a disposizione un intero livello o sfondo.</li>
+  <li>Layout, descrive il modo con cui i Chunk sono collocati in un Layer.</li>
+  <li><strong>Layout loop</strong>, è una tecnica che permette di ripetere il livello dall'inizio una volta arrivato agli estremi di un lato del Layout (vedere Labyrinth Zone di Sonic 1 e Sky Sanctuary di Sonic &amp; Knuckles). Genericamente è usato per i Layer di background.</li>
+  <li><strong>Layer boundary</strong>, bordo virtuale di un Layer. La telecamera può agire solo all'interno del Layer boundary ed ogni entità (tranne eccezioni se specificato) viene distrutta se fuori.</li>
+  <li><strong>Room</strong>, una raccolta di fogli virtuali dove ne sistema la loro priorità. Una Room ha una propria posizione e dimensione espressa in Scene.</li>
+  <li><strong>Map</strong>, la mappa di un livello. Ogni mappa ha una propria posizione espressa in Scene che la colloca in un punto specifico del World (vedi giochi come Metroid o Castlevania). Ogni Map contiene un insieme di Room.</li>
+  <li><strong>World</strong>, chiamata anche World Map, è l'intero mondo di gioco. Contiene un insieme di Map.</li>
+  <li><strong>Layer deformation</strong>, chiamato anche Parallax, è una tecnica che permette di deformare in linee orizzontali un Layer. Ogni linea orizzontale è spostata con una certa velocità in base alla posizione della Camera o in base ad una propria velocità fissa. E' frequentemente utilizzato nei giochi di Sonic the Hedgehog nei background o sott'acqua per il foreground.</li>
+  <li><strong>Collision index</strong>, è quella tabella che descrive quale Hitbox di tipo Field collision è associata ad un singolo Tile.</li>
+  <li><strong>Path</strong>, è un percorso che descrive quale dei due Collision index un tile deve utilizzare. Utile per esempio per i loop in Sonic o per i tubi in Chemical Plant di Sonic 2.</li>
+  <li><strong>Zone</strong>, chiamato anche Stage o Level, è una zona è una raccolta di Act. Rappresenta un singolo livello di gioco.</li>
+  <li><strong>Act</strong>,  è un insieme di elementi da caricare, come Tilesheet, CLUT 3D, Map, Collision index etc. .</li>
+  <li><strong>Node</strong>, è un generico oggetto privo di funzionalità e collisioni. Usa coordinate assolute ed è privo di texture, animazioni ed effetti. Può avere nodi figli e nodi padri.</li>
+  <li><strong>Sprite</strong>, sottoclasse di Node, è un'immagine statica che ha una texture, una serie di effetti ed animazioni.</li>
+  <li><strong>Entity</strong>, sottoclasse di Sprite, è un oggetto dotato di Script, di una serie di Hitbox di tipo Entity collision e di una propria fisica.</li>
+  <li><strong>Script</strong>, è un listato di operazioni programmate. Può essere associato ad un Act o ad un Entity.</li>
+</ul>
+<hr />
+<p id="crediti"><strong>Crediti</strong></p>
+<p>XeEngine, XeSDK, XeWidget, XeEditor e XeScript sono prodotti interamente sviluppati da <a href="http://facebook.com/Xeeynamo">Luciano Ciccariello</a> (<a href="http://twitter.com/Xeeynamo">Xeeynamo</a>). Per maggiori informazioni è possibile contattarmi in privato via e-mail all'indirizzo <a href="mailto:xeeynamo@hotmail.com">xeeynamo@hotmail.com</a>. Se parte del prodotto, risorse del gioco o dell'editor e/o questa documentazione è stata fornita senza permessi, per favore contattatemi all'indirizzo sopra riportato.</p>
+</body>
+</html>

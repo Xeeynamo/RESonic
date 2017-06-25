@@ -1,0 +1,21 @@
+#valuesize 2
+#strnull 0
+#strminsize 15
+#strmaxsize 16
+
+0x0001, "TITLE2",
+0x0002, "STAGESELECT2",
+0x0109, "DWN009",
+0x010A, "DWN010",
+0x010B, "DWN011",
+0x010C, "DWN012",
+0x010D, "DWN013",
+0x010E, "DWN014",
+0x010F, "DWN015",
+0x0110, "DWN016",
+0x0205, "WILY21",
+0x0206, "WILY22",
+0x0207, "WILY23",
+0x0208, "WILY24",
+0x0209, "WILY25",
+0x020A, "WILY26",

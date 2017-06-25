@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14E6E2ED-3AC6-4630-BA5A-A40FE9D3621C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObjectEditor</RootNamespace>
+    <AssemblyName>ObjectEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnimationBox.Designer.cs">
+      <DependentUpon>AnimationBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnimList.Designer.cs">
+      <DependentUpon>AnimList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboFrameBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboFrameBox.Designer.cs">
+      <DependentUpon>ComboFrameBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Animation.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Physic.cs" />
+    <Compile Include="FrameBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameBox.Designer.cs">
+      <DependentUpon>FrameBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListFrameBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListFrameBox.Designer.cs">
+      <DependentUpon>ListFrameBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Entity\Properties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnimationBox.resx">
+      <DependentUpon>AnimationBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimList.resx">
+      <DependentUpon>AnimList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboFrameBox.resx">
+      <DependentUpon>ComboFrameBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameBox.resx">
+      <DependentUpon>FrameBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFrameBox.resx">
+      <DependentUpon>ListFrameBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XeLib\XeLib.csproj">
+      <Project>{7a7d9416-526f-4ce7-9286-c6394d318299}</Project>
+      <Name>XeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

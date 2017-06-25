@@ -1,0 +1,81 @@
+﻿Build started 14/09/2016 03:41:39.
+     1>Project "D:\Xeeynamo\Dropbox\Development\XeEngine_\XeEngine\XeEngine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D DEBUG /D WINDOWS /D WIN32 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt XeObject.cpp
+         XeObject.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Debug\XeEngine.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Debug\XeEngine.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Xeeynamo\Dropbox\Development\XeEngine_\Debug\XeEngine.lib" /MACHINE:X86 Debug\ANM.obj
+         Debug\0001_Sonic.obj
+         Debug\0010_Ring.obj
+         Debug\001A_Pathswap.obj
+         Debug\BLK.obj
+         Debug\ChunkEditor.obj
+         Debug\ChunkSelector.obj
+         Debug\CLI.obj
+         Debug\Console.obj
+         Debug\ContextMenu.obj
+         Debug\Control.obj
+         Debug\CSOTN.obj
+         Debug\DebugConsole.obj
+         Debug\DTL.obj
+         Debug\Editor.obj
+         Debug\Editor_Object.obj
+         Debug\Editor_Block.obj
+         Debug\Editor_HBX.obj
+         Debug\Editor_LUT.obj
+         Debug\Editor_Map.obj
+         Debug\Editor_Preview.obj
+         Debug\Game.obj
+         Debug\Game_Level.obj
+         Debug\Game_LevelSelect.obj
+         Debug\Game_tests.obj
+         Debug\GFX.obj
+         Debug\HBX.obj
+         Debug\LUT.obj
+         Debug\MainEditor.obj
+         Debug\MAP.obj
+         Debug\LevelMap.obj
+         Debug\MapEditor.obj
+         Debug\ObjectList.obj
+         Debug\OBP.obj
+         Debug\OGL.obj
+         Debug\PaletteEditor.obj
+         Debug\PaletteSelector.obj
+         Debug\Preview.obj
+         Debug\Slidebar.obj
+         Debug\Sonic.obj
+         Debug\SonicDec.obj
+         Debug\Sonic1.obj
+         Debug\Sonic1LVL.obj
+         Debug\Sonic2.obj
+         Debug\TextureEditor.obj
+         Debug\TGA.obj
+         Debug\TileSelector.obj
+         Debug\XeAnimation.obj
+         Debug\XeColor.obj
+         Debug\XeEffect.obj
+         Debug\XeImage.obj
+         Debug\XeLevel.obj
+         Debug\XeLevelIO.obj
+         Debug\XeLevelObject.obj
+         Debug\XeMath.obj
+         Debug\XeMemory.obj
+         Debug\XeObject.obj
+         Debug\XeObjectAnimation.obj
+         Debug\XeObjectDebug.obj
+         Debug\XeScene.obj
+         Debug\WinMain.obj
+         Debug\WndProc.obj
+         Debug\XeEntity.obj
+         Debug\XeFile.obj
+         Debug\XeFont.obj
+         Debug\XeShape.obj
+         Debug\XeString.obj
+         Debug\XeSystem.obj
+         Debug\XeTexture.obj
+         XeEngine.vcxproj -> D:\Xeeynamo\Dropbox\Development\XeEngine_\Debug\XeEngine.exe
+     1>Done Building Project "D:\Xeeynamo\Dropbox\Development\XeEngine_\XeEngine\XeEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.96

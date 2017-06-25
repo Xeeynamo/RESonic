@@ -1,0 +1,12 @@
+ROOT:
+XeEngine.exe (diventerà Sonic1HD.exe)
+glew32.dll (cercherò di integrarla nel .exe)
+glut32.dll (cercherò di integrarla nel .exe)
+DATA.XFS
+
+DATA.XFS:
+LEVEL\\nomelivello\\filelivello
+SOUNDS\\BGM\\nomemusica
+SOUNDS\\SE\\nomeeffettosonoro
+OBJECT\\nomeoggetto
+TITLE\\filetitolo

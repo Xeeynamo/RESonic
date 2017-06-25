@@ -1,0 +1,12 @@
+#version 110
+
+varying vec3 texcoord;
+varying vec4 filtercolor;
+
+void main()
+{
+	filtercolor = gl_Color;
+	gl_TexCoord[0]  = gl_MultiTexCoord0;
+	gl_Position = gl_ModelViewProjectionMatrix*gl_Vertex; // ftransform()
+	texcoord = gl_TexCoord[0].xyz;
+}

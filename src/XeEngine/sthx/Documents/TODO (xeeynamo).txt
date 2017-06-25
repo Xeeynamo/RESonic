@@ -1,0 +1,117 @@
+[X] Sistemare la forza delle salite
+[X] Sistemare la velocità x durante il salto
+[X] Sistemare il salto quando si parte dalle salite o discese
+[X] Sistemare le angolazioni
+[X] Spostare LookUp e LookDown sotto SpinDash e Jump
+[X] Sistemare Sonic_Jump quando il personaggio è a terra
+[X] Implementare le collisioni con i muri
+[X] Implementare le collisioni col soffitto
+[X] Finire di implementare DoCollision
+[X] Implementare la camminata verticale
+[X] Sistemare il repel nella camminata verticale
+[X] Implementare la camminata orizzontale ma sul soffitto
+[X] Implementare le collisioni Left e Right mentre si è a terra
+[X] Sistemare le collisioni Left e Right mentre si è a terra
+[X] Sistemare l'atterraggio del salto
+[X] Sitemare il rolling sui muri verticali
+[X] Implementare il convertitore di Chunk256 a Chunk128
+[X] Implementare il convertitore di tile8 in tile16 con 256 colori
+[ ] Implementare un level importer per Sonic 1, 2, 3, CD
+[ ] Sistemare la dimensione delle collisioni del rolling e del jumping
+[ ] Implementare SuperPeelOut
+[ ] Implementare il Ledge
+[X] Implementare i controlli nell'editor
+[ ] Riscrivere l'editor usando i controlli
+[ ] Implementare l'object placement nell'editor
+[X] Implementare il ring in C++
+[ ] Fixare alcuni bug in XeVCPU
+[ ] Implementare le funzioni in XeASM e XeVCPU
+[ ] Implementare l'interazione delle funzioni tra XeEngine e XeVCPU
+[ ] Implementare il ring in XeASM
+[ ] Implementare il monitor
+[X] Implementare l'iterazione e collisioni tra oggetti
+[ ] Implementare il path swapping
+[ ] Implementare le palette dinamiche
+[X] Implementare i tile dinamici
+[ ] Implementare i tilecard
+[ ] Implementare il riavvio del livello
+[X] Implementare i file .STG
+[ ] Implementare il sistema di caricamento dinamico dei livelli
+[X] Implementare una level selection
+[ ] Implementare la debug mode come Sonic 1/2/CD//3K
+[ ] Implementare il back texture buffer
+[ ] Implementare Tails
+[ ] Implementare Super Sonic
+[ ] Implementare il signpost
+[ ] Implementare i bordi dinamici del livello
+[ ] Implementare il MotoBug
+[ ] Implementare il BuzzBomber
+[ ] Implementare le piattaforme volanti di GHZ
+[ ] Implementare il ponte di GHZ
+[ ] Implementare il primo boss
+[ ] Implementare gli altri badnick
+[ ] Implementare la cutscene di Scrap Brain Act 2
+[ ] Implementare il Demo recording
+[ ] Implementare il Demo playing
+[ ] Implementare il resto degli oggetti
+[ ] Implementare gli altri boss
+[ ] Primo video sui canali Youtube
+[ ] Implementare un livello di Debug
+[ ] Implementare Knuckles
+[ ] Implementare Alucard da SOTN
+[ ] Implementare le barriere
+[ ] Implementare il time warp
+[ ] Implementare la Title Screen
+[ ] Implementare un menu dopo la Title Screen con varie opzioni
+[ ] Implementare un menu pausa
+[ ] Implementare un sistema di abilità
+[ ] Porting dei livelli di Castlevania SOTN
+[ ] Prime info pubbliche
+[ ] Sito web e forum
+[ ] Implementare XeFS
+[ ] Importare i livelli di Sonic 1 e 2 da SMS/GG
+[ ] Ridisegnare la GHZ di Sonic 1 SMS/GG
+[ ] Lavorare ai Sonic di SMS/GG
+[ ] Implementare il formato VGM
+[ ] Implementare un sintetizzatore custom
+[ ] Implementare il joypad
+[ ] Implementare un sistema che permetta di cambiare i tasti della tastiera e joypad su PC
+[ ] Porting in OpenGL ES (Android? PS3? Vita?)
+[ ] Porting DirectX9 (Native Windows? XBOX360?) 
+[ ] Porting in DirectX11 (W8? WP8?)
+[ ] Dimostrazione dei livelli di Sonic e della possibilità di caricare anche livelli di Castle
+[ ] Implementare XeC
+[ ] Migliorare XeVCPU
+[ ] Migliorare XeASM
+[ ] Sistema sfide
+[ ] Sistema archievements
+[ ] Sistema classifiche
+[ ] Ottimizzazioni varie
+[ ] Beta testing
+[ ] Bug fixing della Beta testing
+[ ] Closed pre-final
+[ ] Bug fixing della Closed pre-final
+[ ] Pubblicazione del gioco
+[ ] Porting dei livelli di Sonic CD
+[ ] Porting dei livelli di Sonic 3 and Knucles
+[ ] Implementare Megaman X
+[ ] Implementare Megaman
+[ ] Porting dei livelli di Megaman X
+[ ] Porting dei livelli di Megaman
+[ ] Porting dei livelli dei Castlevania presenti su NDS
+[ ] Implementare Amy Rose come personaggio giocabile
+[ ] Implementare Eggman come personaggio giocabile
+[ ] Implementare Metal Sonic come personaggio giocabile
+[ ] Implementare Mecha Sonic MKII come personaggio giocabile
+[ ] Prima demo per Sonic Redrawn
+[ ] Lavorare e finire Sonic Redrawn
+[ ] Cominciare a lavorare su Sonic 2 e sulla sua grafica 2x
+[ ] Pianificare un gioco commerciale
+[ ] Primi schizzi
+[ ] Pubblicare Sonic 2 a 2x
+[ ] Pubblicare i livelli di Sonic CD e Sonic 3K in Sonic MD Collection
+[ ] Cominciare a pianificare in grande XD
+[ ] Cominciare a guardare oltre il team composto da Xeeynamo e STHX
+[ ] Vedere se è possibile lanciare il gioco per Console portatili e casalinghe
+[ ] Sviluppo del vero e proprio gioco e nascita del team di sviluppo
+[ ] Enjoy the dream

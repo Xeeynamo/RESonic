@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animlist>
+  <category name="Object">
+    <entry name="Tocca elmo Stand">
+      <description>Mega man sta nella posa di pausa mentre si tocca l'elmo... Boh XD</description>
+    </entry>
+    <entry name="Tocca elmo Walk">
+      <description>Mega man si tocca l'elmo e cammina</description>
+    </entry>
+    <entry name="Walk'n'shoot">
+      <description>Megaman cammina e spara</description>
+    </entry>
+    <entry name="Teleport">
+      <description>Animazione del teletrasporto</description>
+    </entry>
+    <entry name="Solleva">
+      <description>Megaman solleva qualcosa</description>
+    </entry>
+    <entry name="Scivolata">
+      <description>Classica scivolata di Megaman</description>
+      <subanim name="Mega scivolata"/>
+    </entry>
+  </category>
+</animlist>

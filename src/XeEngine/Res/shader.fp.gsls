@@ -1,0 +1,30 @@
+#version 110
+
+uniform int properties;				// Proprietà di una texture
+uniform int effect;					// Effetti da applicare ad una texturesampler2D
+uniform float mulvalue;				// Valore generico da moltiplicare
+uniform float saturation;			// Saturazione dell'immagine
+uniform float fadefactor;			// Utile per modificare il canale alpha
+uniform float clutindex;			// Indice del CLUT
+uniform float clutdepth;			// Profondità del CLUT
+uniform sampler3D clut;				// Texture CLUT
+uniform sampler3D texture;			// Texture su cui si lavorerà
+
+varying vec3 texcoord;
+varying vec4 filtercolor;
+
+void main()
+{
+	vec4 precolor = texture3D(texture, texcoord);
+	
+	if (properties == 0x00000001) // PROPERTIES_CLUT
+	{
+		precolor = texture3D(clut, vec3(precolor.a, clutindex, clutdepth));
+	}
+
+	float gray = (precolor.r + precolor.g + precolor.b)/3.0;
+	precolor.rgb += (gray-precolor.rgb)*saturation;
+	precolor.rgb *= mulvalue;
+
+	gl_FragColor = vec4(precolor.rgb, precolor.a*fadefactor) * filtercolor;
+}

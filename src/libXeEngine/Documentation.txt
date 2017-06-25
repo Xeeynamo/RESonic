@@ -1,0 +1,88 @@
+ === LEVEL 0 ===
+XeEngine::System			gestisce tutte le chiamate di sistema			DIPENDE DA Sistema Operativo
+XeEngine::Window			gestisce la finestra del sistema operativo		DIPENDE DA XeEngine::Application
+XeEngine::Video				gestisce la scheda video						DIPENDE DA XeEngine::Window, SISTEMA OPERATIVO
+	XeEngine::OpenGL21														DIPENDE DA Hardware
+	XeEngine::OpenGL33														DIPENDE DA Hardware
+	XeEngine::DirectX9														DIPENDE DA Hardware
+	XeEngine::DirectX11														DIPENDE DA Hardware
+XeEngine::Audio				gestisce la parte audio							-
+XeEngine::Input				gestisce l'input da tastiera/joypad				-
+	XeEngine::XInput
+	XeEngine::DirectInput
+	XeEngine::TouchInput
+XeEngine::Math				gestisce le operazioni matematiche				-
+XeEngine::Vector			gestisce i vettori								-
+XeEngine::Matrix			gestisce le matrici								-
+XeEngine::Geometry			gestisce gli elementi geometrici				-
+
+ === LEVEL 1 ===
+XeEngine::Application		gestisce il cuore di un'applicazione			-
+XeEngine::List				gestisce una lista								-
+XeEngine::Stack				gestisce uno stack								-
+XeEngine::Color				gestisce i colori								-
+XeEngien::Node				gestisce un nodo								-
+XeEngien::Graphic			gestione della grafica ad alto livello			DIPENDE DA XeEngine::Video
+XeEngine::Memory			gestisce la memoria dinamica					DIPENDE DA XeEngine::System
+XeEngine::File				gestisce i file									DIPENDE DA XeEngine::System
+XeEngine::Image				gestisce le immagini							DIPENDE DA XeEngine::Memory
+
+ === LEVEL 2 ===
+XeEngine::Texture			gestore di texture								DIPENDE DA XeEngine::Image
+XeEngine::Sprite			gestisce una sprite								DIPENDE DA XeEngine::Video, XeEngine::Texture
+XeEngine::Scene				gestisce una scena								DIPENDE DA XeEngine::Video, XeEngine::Image, XeEngine::Entity
+XeEngine::Director			gestore di scene								DIPENDE DA XeEngine::Scene
+
+ === LEVEL 3 ===
+XeEngine::Script			gestisce uno script								DIPENDE DA XeEngine::Memory, XeEngine::File
+XeEngine::Animation			gestisce le animazioni							DIPENDE DA XeEngine::Texture
+XeEngine::Font				gestisce un font								DIPENDE DA XeEngine::Texture
+XeEngine::Entity			gestisce un oggetto								DIPENDE DA XeEngine::Entity, XeEngine::Animation
+XeEngine::Level				gestisce un livello								DIPENDE DA XeEngine::Scene, XeEngine::Texture
+XeEngine::Map				gestisce una mappa								DIPENDE DA XeEngine::Map
+
+ === LEVEL 4 ===
+XeEngine::ObjectLoader		gestisce un oggetto caricato					DIPENDE DA XeEngine::Object
+
+
+
+<=-=-=> TO-DO <=-=-=>
+- Implement DirectX9
+- Improve OpenGL
+- Implement TileMap
+- Implement Metroidvania map system
+- Improve dynamic palette
+- Improve dynamic tiles
+- Improve parallax
+- Improve layer management
+- Send all the graphics to a single texture
+- Merge XeScript
+- Improve object management
+- Implement touch funcionalities
+- Implement Windows Store support
+
+
+<=-=-=> APPLICATION LOGIC <=-=-=>
+Declare a sub-class of Application
+Create a Window class
+Create the Window
+Select the created Window with Application::SetWindow
+Select the Video engine with Application::SetVideo
+Select the input engine with Application::SetInput
+Execute Application::Run
+	If a window or one of the engine wasn't attached, Run returns -1
+	Call Game::Init
+	--- Now the application is inside a loop handled by Window's class
+	Call Video::PaintBegin
+	Call Game::Run
+	Call Video::PaintEnd
+	
+<=-=-=> GAME LOGIC <=-=-=>
+The entire logic is handled by Game::OnExecute
+If state is GameState_INIT
+	Initialize XeEngine::Level
+	Load game script
+If state is GameState_RUN
+	Execute the custom code
+	Execute the scripts
+	Draw the stuff
